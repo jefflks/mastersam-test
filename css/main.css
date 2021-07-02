@@ -2103,74 +2103,45 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Mobile Nav Styling */
-#mobile-nav {
+.show {display:block !important;}
+
+/* Fixed sidenav, full height */
+.side-nav {
+  height: 100%;
+  width: 50%;
   position: fixed;
-  top: 67px;
-  padding-top: 18px;
-  bottom: 0;
-  z-index: 998;
-  background: rgba(255, 255, 255, 0.9);
-  right: 0px;
-  width: 260px;
-  overflow-y: auto;
-  transition: 0.4s;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255);
+  padding-top: 100px;  
   display: none;
 }
 
-.show {display:block !important;}
-
-#mobile-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#mobile-nav ul li {
-  position: relative;
-}
-
-#mobile-nav ul li a {
-  color: #000;
-  font-size: 13px;
-  text-transform: uppercase;
-  overflow: hidden;
-  padding: 10px 22px 10px 15px;
-  position: relative;
+/* Style the sidenav links and the dropdown button */
+.side-nav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
-  width: 100%;
+  color: #000;
   display: block;
-  outline: none;
-  font-weight: 700;
-}
-
-#mobile-nav ul li a:hover {
-  color: #000;
-}
-
-#mobile-nav ul li li {
-  padding-left: 30px;
-}
-
-#mobile-nav ul .menu-has-children i {
-  position: absolute;
-  right: 0;
-  z-index: 99;
-  padding: 15px;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
   cursor: pointer;
-  color: #000;
+  outline: none;
 }
 
-#mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #6434fe;
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  padding: 10px 10px 10px 30px;
 }
 
-#mobile-nav ul .menu-has-children li a {
-  text-transform: none;
-}
-
-#mobile-nav ul .menu-item-active {
-  color: #6434fe;
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
 }
 
 #mobile-body-overly {
@@ -3107,7 +3078,11 @@ img {vertical-align: middle;}
 }
 
 .active {
-  background-color: #717171;
+  
+}
+
+.white-space-normal{
+  white-space: normal !important;
 }
 
 /* Fading animation */
