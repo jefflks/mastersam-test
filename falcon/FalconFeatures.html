@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Falcon</title><link rel="icon" href="img/fav-icon.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+ 
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
+<link href="css/flexslider.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+ 
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+<script>
+function change(elem)
+{
+    if (elem.value=="+") elem.value = "-";
+    else elem.value = "+";
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+	<!-- start header -->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo_falcon.png" alt="logo" width="175" height="45"/></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+						<li class="dropdown active">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle">Product<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="FalconOverview.html">Overview</a></li>
+								<li><a href="FalconFeatures.html">Features</a></li>
+								<li><a href="DocsRef.html">Documentation & References</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+	<!-- end header -->
+	
+	<section class="content">
+		<div class="container">
+			<h3>Falcon - An Overview of Features</h3><br>							
+			<p>StarTrX Falcon is a powerful and affordable enterprise-level real-time monitoring system to gather and analyse events from servers, virtual machines, cloud and network devices enabling the user to quickly detect, diagnose, and resolve problems and service outages.</p>
+			<p>Falcon offers its users the perfect balance of simplicity and depth. Being able to monitor your StarTrX enterprise network is all dependent on your perspective. StarTrX Falcon technology delivers a comprehensive view of the connected network.</p>
+			<p>The following are key features like dashboards, configurability, alerts, protocol support, auto-discovery, and plugins. The aim is to take a peek at what StarTrX Falcon has to offer as it delivers better overall monitoring experience.</p>
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Dashboard and User Interface</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#Dashboard" style="color:white; width:100%;">
+							<input type="button" value="+" id="DashboardButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="Dashboard" class="panel-collapse collapse">
+			<li class="list-group-item"> The Falcon dashboard is high-quality and can be customized and offers a cleaner and custom experience. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Configuration</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#Configuration" style="color:white; width:100%;">
+							<input type="button" value="+" id="ConfigurationButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="Configuration" class="panel-collapse collapse">
+			<li class="list-group-item"> Falcon allows you to change your configurations through a web-based interface. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Visualization</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#Visualization" style="color:white; width:100%;">
+							<input type="button" value="+" id="VisualizationButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="Visualization" class="panel-collapse collapse">
+			<li class="list-group-item"> Falcon has its own premium graphs available out-of-the-box. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Web Interface</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#WebInterface" style="color:white; width:100%;">
+							<input type="button" value="+" id="WebInterfaceButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="WebInterface" class="panel-collapse collapse">
+			<li class="list-group-item"> Convenient to deploy. Falcon allows you to configure your monitoring environment through the use of a modern user interface. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+													
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Auto discovery</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#AutoDiscovery" style="color:white; width:100%;">
+							<input type="button" value="+" id="AutoDiscoveryButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="AutoDiscovery" class="panel-collapse collapse">
+			<li class="list-group-item"> Monitoring large environments could be a nightmare without automation. Falcon provides several ways of automating the management of such StarTrX environments. Devices and elements of devices, such as file systems and network interfaces, batch & online processes, can be added and removed automatically as they come and leave a StarTrX environment. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Protocol Support</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#Protocol" style="color:white; width:100%;">
+							<input type="button" value="+" id="ProtocolButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="Protocol" class="panel-collapse collapse">
+			<li class="list-group-item"> HTTP. </li>
+			<li class="list-group-item"> SMTP. </li>
+			<li class="list-group-item"> FTP. </li>
+			<li class="list-group-item"> SNMP. </li>
+			<li class="list-group-item"> POP3. </li>
+			<li class="list-group-item"> SSH. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Alerts and Notifications</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#Alerts" style="color:white; width:100%;">
+							<input type="button" value="+" id="AlertsButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="Alerts" class="panel-collapse collapse">
+			<li class="list-group-item"> Alerts and notifications are offered out-of-the-box. </li>
+			<li class="list-group-item"> One can opt to receive Alerts through email and SMS. Falcon also allows one to customize messages and to determine an escalation chain. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Monitoring Templates</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#MonitoringTemplates" style="color:white; width:100%;">
+							<input type="button" value="+" id="MonitoringTemplatesButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="MonitoringTemplates" class="panel-collapse collapse">
+			<li class="list-group-item"> Falcon offers templates for FTP, HTTP, HTTPS, IMAP, LDAP, MySQL, NNTP, SMTP, SSH, POP and Telnet. Falcon also offers templates for monitoring of appliances (firewall, switch, router etc) as well as various OSes (Linux, Windows, AIX, OpenBSD, Solaris, Mac OSX). </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Cross-Platform</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#CrossPlatform" style="color:white; width:100%;">
+							<input type="button" value="+" id="CrossPlatformButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="CrossPlatform" class="panel-collapse collapse">
+			<li class="list-group-item"> Extensive customization capabilities of Falcon allow to integrate it in any environment on StarTrX. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Notification</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#Notification" style="color:white; width:100%;">
+							<input type="button" value="+" id="NotificationButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="Notification" class="panel-collapse collapse">
+			<li class="list-group-item"> Falcon allows not only to collect, store and analyse information about monitored environment, but also to inform responsible personnel about occurred incidents through a variety of notification methods: </li>
+			<li class="list-group-item"> E-mail. </li>
+			<li class="list-group-item"> SMS. </li>
+			<li class="list-group-item"> Jabber. </li>
+			<li class="list-group-item"> Further notifications can be scripted and customized (depending on the context), for example Skype, instant messaging, voice, etc. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Escalation</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#Escalation" style="color:white; width:100%;">
+							<input type="button" value="+" id="EscalationButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="Escalation" class="panel-collapse collapse">
+			<li class="list-group-item"> Powerful escalation module supports building of complicated workflows to assist delivering only relevant alert information to responsible personnel at the right time. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Data Repository</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#DataRepository" style="color:white; width:100%;">
+							<input type="button" value="+" id="DataRepositoryButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="DataRepository" class="panel-collapse collapse">
+			<li class="list-group-item"> Falcon offers great performance and can be scaled to very large environments. </li>
+			<li class="list-group-item"> Data is gathered using various methods, including Falcon native agents and agentless options: </li>
+			<li class="list-group-item"> SNMPv1, SNMPv2, SNMPv3, IPMI, WMI, trappers, SSH, Telnet, web checks. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Dynamic network discovery and mapping</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#DynamicNetwork" style="color:white; width:100%;">
+							<input type="button" value="+" id="DynamicNetworkButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="DynamicNetwork" class="panel-collapse collapse">
+			<li class="list-group-item"> Automatically discover and map devices, performance metrics, link utilization, and wireless coverage. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Hardware health monitoring</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#HardwareHealth" style="color:white; width:100%;">
+							<input type="button" value="+" id="HardwareHealthButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="HardwareHealth" class="panel-collapse collapse">
+			<li class="list-group-item"> Monitor, alert, and report on key device metrics, including temperature, fan speed, and power supply. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Customizable performance and availability reports</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#CustomizableReport" style="color:white; width:100%;">
+							<input type="button" value="+" id="CustomizableReportButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="CustomizableReport" class="panel-collapse collapse">
+			<li class="list-group-item"> Schedule and generate custom network performance reports with one of over 100 out-of-the box templates. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Agent-based Deployment - distributed mode (1:N connections)</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#AgentDeploy" style="color:white; width:100%;">
+							<input type="button" value="+" id="AgentDeployButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="AgentDeploy" class="panel-collapse collapse">
+			<li class="list-group-item"> Falcon provides an agent for various supported platforms, Linux, UNIX and Windows, and collect data such as CPU, memory, disk and network interface usage from a device. Due to its small footprint, the agent can be run on devices with limited resources. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>Agentless Deployment</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#AgentlessDeploy" style="color:white; width:100%;">
+							<input type="button" value="+" id="AgentlessDeployButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="AgentlessDeploy" class="panel-collapse collapse">
+			<li class="list-group-item"> While an agent-based deployment offers great features on most platforms, in some cases it is not possible to install it. For these cases, some agentless monitoring methods are provided by the Falcon server. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>On-behalf deployment - concentrated mode (1:1 connections)</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#OnbehalfDeploy" style="color:white; width:100%;">
+							<input type="button" value="+" id="OnbehalfDeployButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="OnbehalfDeploy" class="panel-collapse collapse">
+			<li class="list-group-item"> On-behalf deployment is utilizing so called Falcon Proxy. </li>
+			<li class="list-group-item"> The main benefit of proxies in terms of performance is that the load is redistributed from your Falcon server to proxies. </li>
+			<li class="list-group-item"> A Falcon proxy is the ideal solution if you have numerous hosts with multiple slow items that are affecting the performance of the server simply because processes are spending most of the time simply waiting for a response. A proxy can collect information from all hosts using its internal processes and then send raw historical data to the server. The time needed to connect and receive the host response will be on the proxy site, and the server performance will not be affected at all. A proxy just sends raw values to the server, and the server itself does not have to connect to the host to get the data. </li>
+			<li class="list-group-item"> Proxies also come with a separate database. It can store the data if you have network communication issues between the Falcon server and the proxy. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+			<ul class="list-group">
+			<div class="panel-group"><div class="panel panel-default">
+			<div class="panel-heading" style="background-color: #002e5b;">			
+				<h4 class="panel-title" style="color:white;">
+					<b>High Availability (HA)</b>
+					<span style="float:right;">
+						<a data-toggle="collapse" href="#HighAvail" style="color:white; width:100%;">
+							<input type="button" value="+" id="HighAvailButton" style="background-color: #002e5b; border: none;" onclick="change(this)"/>
+						</a>				
+					</span>
+				</h4>		
+			</div>
+			<div id="HighAvail" class="panel-collapse collapse">
+			<li class="list-group-item"> In a large environment, especially if you need to guarantee that all your servers are up and running, it is of vital importance to have a reliable Falcon infrastructure. The monitoring system and Falcon infrastructure should survive any possible disaster and guarantee business continuity. </li>
+			<li class="list-group-item"> Falcon infrastructure consist of three-tier setup, Falcon GUI, Falcon Server and Database. Multiple nodes can be setup and configured for every tier to achieve a high availability and reliable Falcon infrastructure. The nodes will switch automatically if the current resource dies or connections fail. </li>
+			</div>
+			</div>
+			</div>
+			</ul>
+			
+		</div>
+	</section>
+	
+
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>Copyright © <script>document.write(new Date().getFullYear());</script>. All right reserved. <br/><img src="img/iac-logo.png" alt="logo" width="200" height="30"/></p>
+					</div>
+				</div>
+				<!--
+				<div class="col-lg-6">
+					<ul class="social-network">
+						<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+				-->
+			</div>
+		</div>
+	</footer>
+	
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>  
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/animate.js"></script>
+<!-- Vendor Scripts -->
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
