@@ -2208,7 +2208,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .primary-btn {
   line-height: 42px;
   padding-left: 30px;
-  padding-right: 60px;
+  padding-right: 30px;
   border-radius: 25px;
   border: none;
   color: #fff;
@@ -2349,7 +2349,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .header-btn:hover {
   border: 1px solid #fff;
-  background: transparent;
+  background: blue;
   color: #fff;
 }
 
@@ -2445,9 +2445,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .sigle-service .primary-btn {
   padding-left: 30px;
   padding-right: 30px;
-  background: transparent;
   border: 1px solid #eee;
-  color: #222;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -3125,5 +3123,11 @@ img {vertical-align: middle;}
     .text-copyright {
 		text-align: left !important;
 	}
+}
 
+.text-title {
+	font-family: "Poppins", sans-serif;
+    font-weight: 600;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
