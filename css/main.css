@@ -332,8 +332,24 @@ td, th {
   margin-left: 30px;
 }
 
+.ml-40 {
+  margin-left: 40px;
+}
+
 .ml-50 {
   margin-left: 50px;
+}
+
+.ml-80 {
+  margin-left: 80px;
+}
+
+.ml-100 {
+  margin-left: 100px;
+}
+
+.ml-120 {
+  margin-left: 120px;
 }
 
 .mr-0 {
