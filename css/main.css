@@ -2003,7 +2003,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   #nav-menu-container {
-    padding-right: 60px;
+    padding-right: 0px;
   }
 }
 
@@ -2192,15 +2192,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .p1-gradient-bg, .primary-btn, .sigle-service:hover .primary-btn, .facts-area {
-  background-image: -moz-linear-gradient(0deg, #5f36ff 0%, #b719f6 100%);
-  background-image: -webkit-linear-gradient(0deg, #5f36ff 0%, #b719f6 100%);
-  background-image: -ms-linear-gradient(0deg, #5f36ff 0%, #b719f6 100%);
+  background-image: -moz-linear-gradient(0deg, #181819 0%, #195df6 100%);
+  background-image: -webkit-linear-gradient(0deg, #181819 0%, #195df6 100%);
+  background-image: -ms-linear-gradient(0deg, #181819 0%, #195df6 100%);
 }
 
 .p1-gradient-color, .single-about .lnr, .sigle-service:hover .lnr, .feat-txt h1, .single-recent-work:hover h4 {
-  background: -moz-linear-gradient(0deg, #5f36ff 0%, #b719f6 100%);
-  background: -webkit-linear-gradient(0deg, #5f36ff 0%, #b719f6 100%);
-  background: -ms-linear-gradient(0deg, #5f36ff 0%, #b719f6 100%);
+  background: -moz-linear-gradient(0deg, #181819 0%, #195df6 100%);
+  background: -webkit-linear-gradient(0deg, #181819 0%, #195df6 100%);
+  background: -ms-linear-gradient(0deg, #181819 0%, #195df6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
