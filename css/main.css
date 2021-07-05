@@ -2133,6 +2133,19 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 100px;  
   display: none;
 }
+@media (max-width: 768px) {
+	.side-nav {
+	  height: 100%;
+	  width: 100%;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  right: 0;
+	  background: rgba(255, 255, 255);
+	  padding-top: 100px;  
+	  display: none;
+	}
+}
 
 /* Style the sidenav links and the dropdown button */
 .side-nav a, .dropdown-btn {
@@ -3171,4 +3184,91 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 600;
 	padding-top: 5px;
 	padding-bottom: 5px;
+}
+
+.pam-feature-1 {
+	background-image: url(../img/products/PAMFeature_1.png); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	min-height: 250px;
+}
+
+.pam-feature-2 {
+	background-image: url(../img/products/PAMFeature_2.png); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	min-height: 250px;
+}
+
+.pam-feature-3 {
+	background-image: url(../img/products/PAMFeature_3.png); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	min-height: 250px;
+}
+
+.pam-feature-4 {
+	background-image: url(../img/products/PAMFeature_4.png); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	min-height: 250px;
+}
+
+.pam-feature-5 {
+	background-image: url(../img/products/PAMFeature_5.png); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	min-height: 250px;
+}
+
+.pam-text{
+	margin-left: 80px;
+}
+
+@media (max-width: 991.98px) {
+	
+	.pam-feature-1 {
+		background-image: url(../img/products/PAMFeature_sm_1.png); 
+		background-repeat: no-repeat; 
+		background-size: 100% 100%; 
+		min-height: 250px;
+	}
+
+	.pam-feature-2 {
+		background-image: url(../img/products/PAMFeature_sm_2.png); 
+		background-repeat: no-repeat; 
+		background-size: 100% 100%; 
+		min-height: 250px;
+	}
+
+	.pam-feature-3 {
+		background-image: url(../img/products/PAMFeature_sm_3.png); 
+		background-repeat: no-repeat; 
+		background-size: 100% 100%; 
+		min-height: 250px;
+	}
+
+	.pam-feature-4 {
+		background-image: url(../img/products/PAMFeature_sm_4.png); 
+		background-repeat: no-repeat; 
+		background-size: 100% 100%; 
+		min-height: 250px;
+	}
+
+	.pam-feature-5 {
+		background-image: url(../img/products/PAMFeature_sm_5.png); 
+		background-repeat: no-repeat; 
+		background-size: 100% 100%; 
+		min-height: 250px;
+	}
+	
+	.pam-text{
+		margin-left: 90px;
+	}
+}
+
+@media (max-width: 767.98px) {
+    .pam-text{
+		margin-left: 40px;
+	}
 }
