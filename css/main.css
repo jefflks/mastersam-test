@@ -1902,7 +1902,6 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  padding: 14px 0;
   position: fixed;
   left: 0;
   top: 0;
@@ -3271,4 +3270,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     .pam-text{
 		margin-left: 40px;
 	}
+}
+
+ul.feature {
+	list-style-type: circle;
+	padding-left: 40px;
 }

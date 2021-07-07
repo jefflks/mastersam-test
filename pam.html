@@ -31,136 +31,130 @@
 	</head>
 	<body>
 
-	<header id="header" style="padding: 0 0;">
-		<div class="container pt-2">
-			<div class="row align-items-center justify-content-between d-flex">
-				<div id="logo">
-					<a href="index.html"><img src="img/logo.png" alt="" title="" style="max-width: 300px; max-height: 60px;"/></a>
-				</div>
+	<header id="header">
+			<div class="container">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div id="logo">
+						<a href="index.html"><img src="img/logo.png" alt="" title="" style="max-height: 90px;"/></a>
+					</div>
 
-				<nav id="nav-menu-container">
-					<ul class="nav-menu">
-						<li class="dropdown">
-							<a id="Products" data-toggle="dropdown" class="dropdown-toggle">Products</a>							
-							<ul class="dropdown-menu" >
-								<li><a href="usam/index.html">Universal Secure Access Management (USAM)</a></li>
-								<li><a href="varia/index.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a></li>									
-							</ul>
-						</li>
-
-						<li class="dropdown">
-							<a id="Solutions" data-toggle="dropdown" class="dropdown-toggle">Solutions</a>							
-							<ul class="dropdown-menu" >
-								
-								<li><a href="pam.html">Privilege Access Management</a></li>
-								<li><a href="varia/index.html">Multi- Factor Authentication</a></li>
-								<li><a href="usam/index.html">Endpoint Solution</a></li>									
-								<div class="dropdown-divider"></div>
-								<li><a href="nebula/index.html">Secure Remote Access</a></li>									
-								<div class="dropdown-divider"></div>
-								<li><a href="#">Aurora Unified Identity Security</a></li>
-								<li><a href="#">Biometric Secure ID</a></li>
-								
-							</ul>
-						</li>
+					<nav id="nav-menu-container">
+						<ul class="nav-menu">
 						
-						<li><a href="#">Partners</a></li>
+							<li class="dropdown">
+								<a id="Products" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Products</a>							
+								<ul class="dropdown-menu" >
+									<li><a href="usam/index.html">Universal Secure Access Management (USAM)</a></li>
+									<li><a href="varia.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a></li>									
+								</ul>
+							</li>
 
-						<li class="dropdown">
-							<a id="Resources" data-toggle="dropdown" class="dropdown-toggle">Resources</a>							
-							<ul class="dropdown-menu" >							
-								<li><a class="dropdown-item" href="resources.html">Resources Library</a></li>
-								<div class="dropdown-divider"></div>
-								<li><a class="dropdown-item" href="resources.html#techdoc">Technical Documentation</a></li>
-								<li><a class="dropdown-item" href="resources.html#whitepaper">White Paper</a></li>
-							</ul>
-						</li>					
+							<li class="dropdown">
+								<a id="Solutions" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Solutions</a>							
+								<ul class="dropdown-menu" >
+									
+									<li><a href="pam.html">Privilege Access Management</a></li>
+									<li><a href="varia.html">Multi-factor Authentication</a></li>
+									<li><a href="usam/index.html">Endpoint Solution</a></li>									
+									<div class="dropdown-divider"></div>
+									<li><a href="nebula/index.html">Secure Remote Access</a></li>									
+									<div class="dropdown-divider"></div>
+									<li><a href="#">Aurora Unified Identity Security</a></li>
+									<li><a href="#">Biometric Secure ID</a></li>
+									
+								</ul>
+							</li>
+							
+							<li><a href="#" style="padding-top: 10px !important">Partners</a></li>
+
+							<li class="dropdown">
+								<a id="Resources" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Resources</a>							
+								<ul class="dropdown-menu" >							
+									<li><a class="dropdown-item" href="resources.html">Resources Library</a></li>
+									<div class="dropdown-divider"></div>
+									<li><a class="dropdown-item" href="resources.html#techdoc">Technical Documentation</a></li>
+									<li><a class="dropdown-item" href="resources.html#whitepaper">White Paper</a></li>
+								</ul>
+							</li>					
+							
+							<li><a href="about.html" style="padding-top: 10px !important">About</a></li>
+							<li><a href="contact.html" style="padding-top: 10px !important">Contact</a></li>
+							<a href="GetInTouch.html" class="primary-btn header-btn text-white">Request for Demo</a>
+						</ul>
 						
-						<li><a href="about.html">About</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
+					</nav>
+					
 
-				<div id="mobile-nav-toggle">
-					<li id="dropbtn" class="fa fa-bars" onclick="openMenu()"></li>
-				</div>
-				
-				<div id="mobile-nav" class="side-nav">
-					<button id="dropbtn" class="dropdown-btn">Product
-						<i class="fa fa-caret-down"></i>
-					</button>
-					
-					<div class="dropdown-container">
-						<a class="dropdown-item white-space-normal" href="usam/index.html">Universal Secure Access Management (USAM)</a>
-						<a class="dropdown-item white-space-normal" href="varia/index.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a>			
+					<div id="mobile-nav-toggle">
+						<li id="dropbtn" class="fa fa-bars" onclick="openMenu()"></li>
 					</div>
 					
-					
-					<button id="dropbtn" class="dropdown-btn">Solutions
-						<i class="fa fa-caret-down"></i>
-					</button>
-					<div class="dropdown-container">
-						<a class="dropdown-item white-space-normal" href="pam.html">Privilege Access Management</a>
-						<a class="dropdown-item white-space-normal" href="varia/index.html">Multi-Factor Authentication</a>
-						<a class="dropdown-item white-space-normal" href="usam/index.html">Endpoint Solution</a>									
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item white-space-normal" href="nebula/index.html">Secure Remote Access</a>									
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item white-space-normal" href="#">Aurora Unified Identity Security</a>
-						<a class="dropdown-item white-space-normal" href="#">Biometric Secure ID</a>
+					<div id="mobile-nav" class="side-nav">
+						<button id="dropbtn" class="dropdown-btn">Product
+							<i class="fa fa-caret-down"></i>
+						</button>
+						
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="usam/index.html">Universal Secure Access Management (USAM)</a>
+							<a class="dropdown-item white-space-normal" href="varia.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a>			
+						</div>
+						
+						
+						<button id="dropbtn" class="dropdown-btn">Solutions
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="pam.html">Privilege Access Management</a>
+							<a class="dropdown-item white-space-normal" href="varia.html">Multi-factor Authentication</a>
+							<a class="dropdown-item white-space-normal" href="usam/index.html">Endpoint Solution</a>									
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item white-space-normal" href="nebula/index.html">Secure Remote Access</a>									
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item white-space-normal" href="#">Aurora Unified Identity Security</a>
+							<a class="dropdown-item white-space-normal" href="#">Biometric Secure ID</a>
+						</div>
+						<a href="#">Partners</a>
+						
+						<button id="dropbtn" class="dropdown-btn">Resources
+							<i class="fa fa-caret-down"></i>
+						</button>
+						
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="resources.html">Resources Library</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item white-space-normal" href="resources.html#techdoc">Technical Documentation</a>
+							<a class="dropdown-item white-space-normal" href="resources.html#whitepaper">White Paper</a>			
+						</div>
+						
+						<a href="contact.html">Contact</a>
+						
+						<a href="https://www.gartner.com/document/3996938?ref=shareSummary" class="primary-btn header-btn text-uppercase">Request for Demo</a>
 					</div>
-					<a href="#">Partners</a>
-					
-					<button id="dropbtn" class="dropdown-btn">Resources
-						<i class="fa fa-caret-down"></i>
-					</button>
-					
-					<div class="dropdown-container">
-						<a class="dropdown-item white-space-normal" href="resources.html">Resources Library</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item white-space-normal" href="resources.html#techdoc">Technical Documentation</a>
-						<a class="dropdown-item white-space-normal" href="resources.html#whitepaper">White Paper</a>			
-					</div>
-					
-					<a href="contact.html">Contact</a>
-				</div>
-				<script>		
-					// Close the dropdown menu if the user clicks outside of it
-					window.onclick = function(event) {
-						if (event.target.id != 'dropbtn') {
-							document.getElementById("mobile-nav").classList.remove('show');
+					<script>		
+						// Close the dropdown menu if the user clicks outside of it
+						window.onclick = function(event) {
+							if (event.target.id != 'dropbtn') {
+								document.getElementById("mobile-nav").classList.remove('show');
+							}
 						}
-					}
-					
-					var dropdown = document.getElementsByClassName("dropdown-btn");
-					var i;
+						
+						var dropdown = document.getElementsByClassName("dropdown-btn");
+						var i;
 
-					for (i = 0; i < dropdown.length; i++) {
-					  dropdown[i].addEventListener("click", function() {
-						this.classList.toggle("active");
-						var dropdownContent = this.nextElementSibling;
-						if (dropdownContent.style.display === "block") {
-						  dropdownContent.style.display = "none";
-						} else {
-						  dropdownContent.style.display = "block";
+						for (i = 0; i < dropdown.length; i++) {
+						  dropdown[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var dropdownContent = this.nextElementSibling;
+							if (dropdownContent.style.display === "block") {
+							  dropdownContent.style.display = "none";
+							} else {
+							  dropdownContent.style.display = "block";
+							}
+						  });
 						}
-					  });
-					}
-				</script>
-			</div>
-		</div>
-		
-		<!--<div class="container pt-2">
-			<div id="nav-menu2-container" class="row bg-primary">
-				<div class="col-8 pt-1 text-white text-uppercase">
-					PRIVILEGE ACCESS MANAGEMENT (PAM)
-				</div>
-				<div class="col-4 text-right">
-					<a href="pam.html#capa" class="text-white">Capabilities</a>
-					<a href="doc/PAM DataSheets.pdf" target="_blank" class="btn text-white" style="background-color: rgba(245,91,43,1)">Download Feature List</a>
+					</script>
 				</div>
 			</div>
-		</div>-->
 		
 		<nav class="container navbar navbar-expand-lg navbar-light pt-2" style="background-color: rgba(54,124,175,255);">
 		  <a class="text-white font-weight-bold text-uppercase" href="#">PRIVILEGE ACCESS MANAGEMENT (PAM)</a>
@@ -199,9 +193,8 @@
 		</section>
 		<!-- End product Area -->
 
-<!-- Umai 8June2021 Capabilities START -->
 	<section id="capabilities-section" class="site-section">
-      <div class="container pt-4" id="capa">
+      <div class="container pt-150" id="capa">
 		
 		<div class="row justify-content-center" data-aos="fade-up">
 			<div class="col-lg-12 text-center heading-section mb-5">
@@ -265,170 +258,7 @@
 					</div>
 				</div>
 			</div>
-			
-			<p><br/><br/></p>
 		</div>
-
-		
-		<!--<div class="row hover-1-wrap mb-5 mb-lg-0" style="background-color: rgba(249,249,249,1)">
-			<div class="col-12">
-            <div class="row">
-				<div class="mb-4 mb-lg-0 col-lg-3"  data-aos="fade-left">
-					<a href="#" class="hover-1">
-						<img src="img/products/PAM_RPA_1.jpg" alt="Image" class="img-fluid" style="height: 250px; width: 250px;">
-					</a>
-				</div>
-				<div class="col-lg-9 ml-auto align-self-center"  data-aos="fade-right">
-					<div class="heading-section"><h4 class="text-black"><br>Robotic Process Automation RPA </h4>
-					</div>
-					<p class="mb-3">
-						MasterSAM ZIETRA Bots integrated with capabilities of Privileged Access Management (PAM), have its own account credentials with only the privileges they actually need. This confirms with the universal PAM fundamental principle of least privilege or zero trust. 
-						
-						<details><summary>Key Technologies</summary>
-						<div class="row">
-							<img src="img/products/PAM_RPA_2 Key Technologies.png" alt="Image" class="img-fluid" style="height: 220px;"></img>
-							<img src="img/products/PAM_RPA_3.png" alt="Image" class="img-fluid" style="height: 300px;"></img>
-						</div>
-						<div class="row">
-							<p class="mb-3 col-lg-4 order-lg-2">
-								<strong style="font-weight: 900;">Key Benefits<br></strong>
-								<strong class="text-primary">BOOST PRODUCTIVITY</strong> - Exceptions are flagged automatically in real time, improving surveillance and investigations, thereby, increasing the efficiency and productivity.
-							</p>
-							<p class="mb-3 col-lg-4 order-lg-2"><br><strong class="text-primary">REAL-TIME REVIEW AND NOTIFICATIONS</strong> - Remedial actions taken near-real-time prevent and reduce negative impacts of unauthorized or fraudulent activities.</p>
-							<p class="mb-3 col-lg-4 order-lg-2"><br><strong class="text-primary">FRAUD PREVENTION</strong> - Prediction of unauthorized or fraudulent activities, allow for preventive measures to take place.</p>
-						</div>
-						</details>
-					</p>
-					<div><h6 class="text-black">Start your intelligent automation journey</h6></div>
-						<a href="GetInTouch.html" class="btn text-white" style="background-color: rgba(245,91,43,1)">Get in Touch</a>
-					<p><br></p>
-				</div>
-            </div>
-			</div>
-        </div>
-
-		
-        <div class="row hover-1-wrap mb-5 mb-lg-0">
-			<div class="col-12">
-            <div class="row">
-				<div class="mb-4 mb-lg-0 col-lg-3 order-lg-2" data-aos="fade-right">
-					<a href="#" class="hover-1">
-						<img src="img/products/PAM_Auto_Discovery_1.jpg" alt="Image" class="img-fluid" style="height: 250px; width: 250px;"></img>
-					</a>
-				</div>
-				<div class="col-lg-9 mr-auto text-lg-left align-self-center order-lg-1" data-aos="fade-left">
-					<div class="heading-section"><h4 class="text-black">AUTO DISCOVERY & ONBOARDING</h4></div>
-					<p class="mb-3">
-						To effectively secure your digital assets, it is important to be able to identify where your privileged accounts are before they can be managed. To put it simply, you can't secure what you can't see.
-						<details><summary>Show More</summary>
-						<div class="row">
-							<p class="mb-3 col-lg-7 order-lg-2"> 
-								<img src="img/products/PAM_Auto_Discovery_2 Key Features.png" alt="Image" class="img-fluid" style="width: 450px;"></img>
-							</p>
-							<p class="mb-3 col-lg-5 order-lg-2"> 
-								<br>MasterSAM's discovery and onboarding features allows your organization to increase productivity and visibility by detecting digital assets from a central console. Detected digital assets can then be onboarded and policies applied to provide seamless management of new assets.
-							</p>
-							<p class="mb-3 col-lg-12 order-lg-2">
-								MasterSAM PAM has discovery capabilities for privileged accounts running on Windows and Unix/Linux systems. For most organisations, Manual onboarding (or running a one-time discovery tool) in lieu of continuous, automated discovery and onboarding processes helps in achieving basic PAM Maturity level.	
-							</p>
-						</div>
-						</details>
-					</p>							
-					<div class="heading-section"><h6 class="text-black">Ready to discover, identify and onboard privileged accounts?</h6></div>
-						<a href="GetInTouch.html" class="btn text-white" style="background-color: rgba(245,91,43,1)">Let us help you</a>
-					<p><br></p>
-				</div>
-            </div>
-			</div>
-        </div>
-				
-		<div class="row hover-1-wrap mb-5 mb-lg-0" style="background-color: rgba(249,249,249,1)">
-			<div class="col-12">
-            <div class="row">
-				<div class="mb-4 mb-lg-0 col-lg-3"  data-aos="fade-left">
-					<a href="#" class="hover-1">
-						<img src="img/products/PAM_JIT_1.jpg" alt="Image" class="img-fluid" style="height: 250px; width: 250px;">
-					</a>
-				</div>
-				<div class="col-lg-9 ml-auto align-self-center"  data-aos="fade-right">
-					<div class="heading-section"><h4 class="text-black">JIT PAM METHODS</h4></div>
-					<p class="mb-3">
-						‘Just in Time’ is an effective way to implement the principle of least privilege in PAM. It certainly plays a key role in terms of overall PAM maturity and certainly provides for zero standing privileges (ZSP).				
-						<details><summary>Key Features</summary>
-						<div class="row">
-							<img src="img/products/PAM_JIT_2 Key Features.png" alt="Image" class="img-fluid" style="height: 170px;"></img>
-							<p class="mb-3 col-lg-5 order-lg-2"> 
-								<br>MasterSAM PAM believes in eradicating standing privileges and granting privileges only on-demand and ensuring that persons have the privilege only for a specific purpose for the duration they actually require it.
-							</p>
-						</div>
-						</details>
-					</p>
-					<div><h6 class="text-black">Do away with unrestricted access</h6></div>
-						<a href="GetInTouch.html" class="btn text-white" style="background-color: rgba(245,91,43,1)">Get in Touch</a>
-					<p><br></p>
-				</div>
-            </div>
-			</div>
-        </div>
-
-<!-- add+on start here 
-        <div class="row hover-1-wrap mb-5 mb-lg-0">
-			<div class="col-12">
-            <div class="row">
-				<div class="mb-4 mb-lg-0 col-lg-3 order-lg-2" data-aos="fade-right">
-					<a href="#" class="hover-1">
-						<img src="img/products/PAM_AccessGov_1.jpg" alt="Image" class="img-fluid" style="height: 250px; width: 250px;"></img>
-					</a>
-				</div>
-				<div class="col-lg-9 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-left">
-					<div class="heading-section"><h4 class="text-black">PRIVILEGED ACCESS GOVERNANCE</h4></div>
-					<p class="mb-3">
-						Access Governance defines who within your organisation has access to what, when and how. However, with having this clarity comes the challenge of being able to define the security processes, policies and workflows.   
-						<details><summary>Show More</summary>
-						<div class="row">
-							<p class="mb-3 col-lg-6 order-lg-2"> 
-								With MasterSAM PAM, access governance is managed by ensuring:
-								<img src="img/products/PAM_AccessGov_2.png" alt="Image" class="img-fluid" style="width: 450px;"></img>
-							</p>
-							<p class="mb-3 col-lg-6 order-lg-2"> 
-								<img src="img/products/PAM_AccessGov_2 Benefits.png" alt="Image" class="img-fluid" style="width: 450px;"></img>
-							</p>
-						</div>
-						</details>
-					</p>
-					<div><h6 class="text-black">Let us help you.</h6></div>
-						<a href="GetInTouch.html" class="btn text-white" style="background-color: rgba(245,91,43,1)">Get Started</a></p>
-					<p><br></p>
-				</div>
-            </div>
-			</div>
-        </div>
-				
-        <div class="row hover-1-wrap mb-5 mb-lg-0" style="background-color: rgba(249,249,249,1)">
-          <div class="col-12">
-            <div class="row">
-              <div class="mb-4 mb-lg-0 col-lg-3"  data-aos="fade-left">
-                <a href="#" class="hover-1">
-                  <img src="img/products/PAM_CredMgt_1.jpg" alt="Image" class="img-fluid" style="height: 250px; width: 250px;">
-                </a>
-              </div>
-              <div class="col-lg-9 ml-auto align-self-center"  data-aos="fade-right">
-                <div class="heading-section"><h4 class="text-black"><br>PRIVILEGED CREDENTIAL MANAGEMENT</h4></div>
-                <p class="mb-3">Privileged Credential Management offers core features and functions to manage and protect system and enterprise privilege account credentials. This comprises generation, vaulting, password rotation and retrieval for interactive access to credentials by individuals.				
-				<details>
-					<summary>Key Features</summary>
-					<img src="img/products/PAM_CredMgt_2.png" alt="Image" class="img-fluid" style="height: 170px;"></img>
-				</details>
-				</p>
-				<div><h6 class="text-black">Do away with unrestricted access</h6></div>
-				<a href="GetInTouch.html" class="btn text-white" style="background-color: rgba(245,91,43,1)">Contact Us</a>
-				<p><br></p>
-			  </div>
-            </div>
-          </div>
-        </div> -->
-<!-- add+on end here -->		
-		<br><br>
       </div>
     </section>
 <!-- Umai 8June2021 Capabilities END>  -->
