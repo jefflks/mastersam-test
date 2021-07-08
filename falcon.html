@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="MasterSAM">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>MasterSAM</title>
+
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="css/linearicons.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/poppin-font.css"> 
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/nice-select.css">					
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+	<header id="header">
+			<div class="container">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div id="logo">
+						<a href="index.html"><img src="img/logo.png" alt="" title="" style="max-height: 90px;"/></a>
+					</div>
+
+					<nav id="nav-menu-container">
+						<ul class="nav-menu">
+						
+							<li class="dropdown">
+								<a id="Products" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Products</a>							
+								<ul class="dropdown-menu" >
+									<li><a href="usam/index.html">Universal Secure Access Management (USAM)</a></li>
+									<li><a href="varia/index.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a></li>									
+								</ul>
+							</li>
+
+							<li class="dropdown">
+								<a id="Solutions" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Solutions</a>							
+								<ul class="dropdown-menu" >
+									
+									<li><a href="pam.html">Privilege Access Management</a></li>
+									<li><a href="varia.html">Multi-factor Authentication</a></li>
+									<li><a href="usam.html">Endpoint Solution</a></li>									
+									<div class="dropdown-divider"></div>
+									<li><a href="arion.html">Secure Remote Access</a></li>									
+									<div class="dropdown-divider"></div>
+									<li><a href="#">Aurora Unified Identity Security</a></li>
+									<li><a href="#">Biometric Secure ID</a></li>
+									
+								</ul>
+							</li>
+							
+							<li><a href="partner.html" style="padding-top: 10px !important">Partners</a></li>
+
+							<li class="dropdown">
+								<a id="Resources" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Resources</a>							
+								<ul class="dropdown-menu" >							
+									<li><a class="dropdown-item" href="resources.html">Resources Library</a></li>
+									<div class="dropdown-divider"></div>
+									<li><a class="dropdown-item" href="resources.html#techdoc">Technical Documentation</a></li>
+									<li><a class="dropdown-item" href="resources.html#whitepaper">White Paper</a></li>
+								</ul>
+							</li>					
+							
+							<li><a href="about.html" style="padding-top: 10px !important">About</a></li>
+							<li><a href="contact.html" style="padding-top: 10px !important">Contact</a></li>
+							<a href="GetInTouch.html" class="primary-btn header-btn text-white">Request for Demo</a>
+						</ul>
+						
+					</nav>
+					
+
+					<div id="mobile-nav-toggle">
+						<li id="dropbtn" class="fa fa-bars" onclick="openMenu()"></li>
+					</div>
+					
+					<div id="mobile-nav" class="side-nav">
+						<button id="dropbtn" class="dropdown-btn">Product
+							<i class="fa fa-caret-down"></i>
+						</button>
+						
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="usam/index.html">Universal Secure Access Management (USAM)</a>
+							<a class="dropdown-item white-space-normal" href="varia/index.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a>			
+						</div>
+						
+						
+						<button id="dropbtn" class="dropdown-btn">Solutions
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="pam.html">Privilege Access Management</a>
+							<a class="dropdown-item white-space-normal" href="varia.html">Multi-factor Authentication</a>
+							<a class="dropdown-item white-space-normal" href="usam.html">Endpoint Solution</a>									
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item white-space-normal" href="arion.html">Secure Remote Access</a>									
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item white-space-normal" href="#">Aurora Unified Identity Security</a>
+							<a class="dropdown-item white-space-normal" href="#">Biometric Secure ID</a>
+						</div>
+						<a href="partner.html">Partners</a>
+						
+						<button id="dropbtn" class="dropdown-btn">Resources
+							<i class="fa fa-caret-down"></i>
+						</button>
+						
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="resources.html">Resources Library</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item white-space-normal" href="resources.html#techdoc">Technical Documentation</a>
+							<a class="dropdown-item white-space-normal" href="resources.html#whitepaper">White Paper</a>			
+						</div>
+						
+						<a href="contact.html">Contact</a>
+						
+						<a href="https://www.gartner.com/document/3996938?ref=shareSummary" class="primary-btn header-btn text-uppercase">Request for Demo</a>
+					</div>
+					<script>		
+						// Close the dropdown menu if the user clicks outside of it
+						window.onclick = function(event) {
+							if (event.target.id != 'dropbtn') {
+								document.getElementById("mobile-nav").classList.remove('show');
+							}
+						}
+						
+						var dropdown = document.getElementsByClassName("dropdown-btn");
+						var i;
+
+						for (i = 0; i < dropdown.length; i++) {
+						  dropdown[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var dropdownContent = this.nextElementSibling;
+							if (dropdownContent.style.display === "block") {
+							  dropdownContent.style.display = "none";
+							} else {
+							  dropdownContent.style.display = "block";
+							}
+						  });
+						}
+					</script>
+				</div>
+			</div>
+		
+		<nav class="container navbar navbar-expand-lg navbar-light pt-2" style="background-color: rgba(54,124,175,255);">
+		  <a class="text-white font-weight-bold text-uppercase" href="#">Enterprise Level Real Time Monitoring System</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="submenu">
+			<ul class="navbar-nav" style="margin-left: auto; margin-right: 0;">
+				<li class="nav-item">
+				  <a href="falcon.html#capabilities-section" class="btn text-white text-uppercase">Capabilities</a>
+				</li>
+				<li class="nav-item">
+				  <a href="falcon.html#solution-section" class="btn text-white text-uppercase">Solutions</a>
+				</li>
+				<li class="nav-item">
+				  <a href="doc/Falcon-DataSheet-17012020.pdf" target="_blank" class="btn btn-outline-success my-2 my-sm-0 text-white text-uppercase" style="background-color: rgba(245,91,43,1)">Download Data Sheet</a>
+				</li>
+				<li class="nav-item">
+				  <a href="doc/Falcon-FeatureList-17012020.pdf" target="_blank" class="btn btn-outline-success my-2 my-sm-0 text-white text-uppercase" style="background-color: rgba(245,91,43,1)">Download Feature List</a>
+				</p>
+		  </div>
+		</nav>			
+	</header>
+  
+	<!-- Start product Area -->
+	<section class="recent-work-area" id="product">
+		<div class="container">
+			<!-- <br/><br/> -->
+			<div class="row d-flex justify-content-center">
+				<div class="col-12 d-flex justify-content-center text-white text-center align-self-center" style="background-image: url('img/products/falcon-hd.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; min-height: 475px; box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 60%);">
+					<div class="col-8">
+					<br>
+					<br>
+					<h1 class="text-white font-weight-bold pt-200">Falcon</h1>
+					<br>
+					<p>Falcon offers its users the perfect balance of simplicity and depth. Being able to monitor your StarTrX enterprise network is all dependent on your perspective. StarTrX Falcon technology delivers a comprehensive view of the connected network.</p>
+					</div>
+				</div>				
+			</div>
+		</div>	
+	</section>
+	<!-- End product Area -->
+	
+	<section id="intro-section" class="site-section block-13 bg-light pt-4" data-aos="fade">
+      <div class="container">        
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-lg-12 text-center heading-section mb-5">
+			<img class="pb-3" src="img/icon4.png" alt="Image" style="height: 200px;">
+			<h1 style="font-size: 3rem; color: #000; font-weight: 700;">A powerful and affordable enterprise-level real-time monitoring system to gather and analyse events from servers, virtual machines, cloud and network devices enabling the user to quickly detect, diagnose, and resolve problems and service outages.</h1>
+			<br/>
+			<img src="img/products/falcon_1.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 80%;"/>
+			<br/><br/>
+			<h2 class="mb-2 text-black heading">Falcon - At A Glance</h2>
+            <div class="m-3 text-left">
+				<h3>StarTrx Falcon makes it possible to:​</h3>
+				<ul class="bullet-list">
+					<li>Speed up troubleshooting, increase service levels, and reduce downtime.</li>
+					<li>Improve the quality of services and reduce operating costs by avoiding downtime.</li>
+					<li>Monitor resource usage trends and plan capacity increase in a timely manner.</li>
+					<li>Modular and highly scalable.</li>
+					<li>Monitor performance and availability of networks, applications and cloud resources.</li>
+					<li>Send notifications or execute remote commands in case of current or potential problems.</li>
+					<li>Rich visualization capabilities, customizable dashboard, custom graphs and network maps.</li>
+					<li>Provide distributed monitoring options.</li>
+					<li>Improve operational efficiency with out-of-the-box dashboards, alerts, and reports.</li>
+				</ul>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</section>	
+
+	<section id="capabilities-section" class="site-section">
+      <div class="container">
+			<div class="row justify-content-center" data-aos="fade-up">
+				<div class="col-lg-12 text-center heading-section mb-5">
+					<h3 class="text-black mb-2 text-uppercase" data-aos="fade-up" data-aos-delay="">CAPABILITIES</h3>
+					<h4 class="text-black mb-2" data-aos="fade-up" data-aos-delay="">“BETTER OVERALL MONITORING EXPERIENCE”</h4>
+				</div>
+				<p>The following are key features like dashboards, configurability, alerts, protocol support, auto-discovery, and plugins. The aim is to take a peek at what StarTrX Falcon has to offer as it delivers better overall monitoring experience.</p>
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Dashboard and User Interface</button>
+				<ul class="content">
+				  <li class="list-group-item"> Monitoring large environments could be a nightmare without automation. Falcon provides several ways of automating the management of such StarTrX environments. Devices and elements of devices, such as file systems and network interfaces, batch &amp; online processes, can be added and removed automatically as they come and leave a StarTrX environment. </li>
+				</ul>		
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Configuration</button>
+				<ul class="content">
+				  <li class="list-group-item"> Falcon allows you to change your configurations through a web-based interface. </li>
+				</ul>			
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Visualization</button>
+				<ul class="content">
+				  <li class="list-group-item"> Falcon has its own premium graphs available out-of-the-box. </li>
+				</ul>			
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Web Interface</button>
+				<ul class="content">
+				  <li class="list-group-item"> Convenient to deploy. Falcon allows you to configure your monitoring environment through the use of a modern user interface. </li>
+				</ul>			
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Auto discovery</button>
+				<ul class="content">
+				  <li class="list-group-item"> Monitoring large environments could be a nightmare without automation. Falcon provides several ways of automating the management of such StarTrX environments. Devices and elements of devices, such as file systems and network interfaces, batch & online processes, can be added and removed automatically as they come and leave a StarTrX environment. </li>
+				</ul>			
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Protocol Support</button>
+				<ul class="content">
+					<li class="list-group-item"> HTTP. </li>
+					<li class="list-group-item"> SMTP. </li>
+					<li class="list-group-item"> FTP. </li>
+					<li class="list-group-item"> SNMP. </li>
+					<li class="list-group-item"> POP3. </li>
+					<li class="list-group-item"> SSH. </li>
+				</ul>				
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Alerts and Notifications</button>
+				<ul class="content">
+					<li class="list-group-item"> Alerts and notifications are offered out-of-the-box. </li>
+					<li class="list-group-item"> One can opt to receive Alerts through email and SMS. Falcon also allows one to customize messages and to determine an escalation chain. </li>
+				</ul>			
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Monitoring Templates</button>
+				<ul class="content">
+					<li class="list-group-item"> Falcon offers templates for FTP, HTTP, HTTPS, IMAP, LDAP, MySQL, NNTP, SMTP, SSH, POP and Telnet. Falcon also offers templates for monitoring of appliances (firewall, switch, router etc) as well as various OSes (Linux, Windows, AIX, OpenBSD, Solaris, Mac OSX). </li>
+				</ul>
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Cross-Platform</button>
+				<ul class="content">
+				  <li class="list-group-item"> Extensive customization capabilities of Falcon allow to integrate it in any environment on StarTrX. </li>
+				</ul>			
+			</div>
+			
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Notification</button>
+				<ul class="content">
+					<li class="list-group-item"> Falcon allows not only to collect, store and analyse information about monitored environment, but also to inform responsible personnel about occurred incidents through a variety of notification methods: </li>
+					<li class="list-group-item"> E-mail. </li>
+					<li class="list-group-item"> SMS. </li>
+					<li class="list-group-item"> Jabber. </li>
+					<li class="list-group-item"> Further notifications can be scripted and customized (depending on the context), for example Skype, instant messaging, voice, etc. </li>
+				</ul>			
+			</div>
+			
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Escalation</button>
+				<ul class="content">
+				  <li class="list-group-item"> Powerful escalation module supports building of complicated workflows to assist delivering only relevant alert information to responsible personnel at the right time. </li>
+				</ul>			
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Data Repository</button>
+				<ul class="content">
+					<li class="list-group-item"> Falcon offers great performance and can be scaled to very large environments. </li>
+					<li class="list-group-item"> Data is gathered using various methods, including Falcon native agents and agentless options: </li>
+					<li class="list-group-item"> SNMPv1, SNMPv2, SNMPv3, IPMI, WMI, trappers, SSH, Telnet, web checks. </li>
+				</ul>			
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Dynamic network discovery and mapping</button>
+				<ul class="content">
+				  <li class="list-group-item"> Automatically discover and map devices, performance metrics, link utilization, and wireless coverage. </li>
+				</ul>			
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Hardware health monitoring</button>
+				<ul class="content">
+				  <li class="list-group-item"> Monitor, alert, and report on key device metrics, including temperature, fan speed, and power supply. </li>
+				</ul>			
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Customizable performance and availability reports</button>
+				<ul class="content">
+				  <li class="list-group-item"> Schedule and generate custom network performance reports with one of over 100 out-of-the box templates. </li>
+				</ul>			
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Agent-based Deployment - distributed mode (1:N connections)</button>
+				<ul class="content">
+				  <li class="list-group-item"> Falcon provides an agent for various supported platforms, Linux, UNIX and Windows, and collect data such as CPU, memory, disk and network interface usage from a device. Due to its small footprint, the agent can be run on devices with limited resources. </li>
+				</ul>			
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">Agentless Deployment</button>
+				<ul class="content">
+				  <li class="list-group-item"> While an agent-based deployment offers great features on most platforms, in some cases it is not possible to install it. For these cases, some agentless monitoring methods are provided by the Falcon server. </li>
+				</ul>			
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">On-behalf deployment - concentrated mode (1:1 connections)</button>
+				<ul class="content">
+					<li class="list-group-item"> On-behalf deployment is utilizing so called Falcon Proxy. </li>
+					<li class="list-group-item"> The main benefit of proxies in terms of performance is that the load is redistributed from your Falcon server to proxies. </li>
+					<li class="list-group-item"> A Falcon proxy is the ideal solution if you have numerous hosts with multiple slow items that are affecting the performance of the server simply because processes are spending most of the time simply waiting for a response. A proxy can collect information from all hosts using its internal processes and then send raw historical data to the server. The time needed to connect and receive the host response will be on the proxy site, and the server performance will not be affected at all. A proxy just sends raw values to the server, and the server itself does not have to connect to the host to get the data. </li>
+					<li class="list-group-item"> Proxies also come with a separate database. It can store the data if you have network communication issues between the Falcon server and the proxy. </li>
+				</ul>			
+			</div>
+			
+			<div class="m-1">
+				<button type="button" class="collapsible">High Availability (HA)</button>
+				<ul class="content">
+					<li class="list-group-item"> In a large environment, especially if you need to guarantee that all your servers are up and running, it is of vital importance to have a reliable Falcon infrastructure. The monitoring system and Falcon infrastructure should survive any possible disaster and guarantee business continuity. </li>
+					<li class="list-group-item"> Falcon infrastructure consist of three-tier setup, Falcon GUI, Falcon Server and Database. Multiple nodes can be setup and configured for every tier to achieve a high availability and reliable Falcon infrastructure. The nodes will switch automatically if the current resource dies or connections fail. </li>
+				</ul>			
+			</div>
+			
+			
+			<script>
+				var coll = document.getElementsByClassName("collapsible");
+				var i;
+
+				for (i = 0; i < coll.length; i++) {
+				  coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.maxHeight){
+					  content.style.maxHeight = null;
+					} else {
+					  content.style.maxHeight = content.scrollHeight + "px";
+					} 
+				  });
+				}
+			</script>						
+		</div>
+    </section>
+	
+	
+	
+	<footer class="footer-area">
+	  <div class="container pt-2">
+		<div class="row">
+		  <div class="col-md-7">
+				<p class="copyright copyright-text-left">
+					<a href="career.html" style="color: #a2c0be;">Careers</a>
+					&bull; 
+					<a href="contact.html" style="color: #a2c0be;">Contact Us</a>
+					&bull; 
+					<a href="sitemap.html" style="color: #a2c0be;">Sitemap</a>
+					&bull; 
+					<a href="privacy.html" style="color: #a2c0be;">Privacy</a>
+					&bull; 
+					<a href="term.html" style="color: #a2c0be;"><span style="white-space: nowrap;">Terms of Use</span></a>
+				</p>
+			</div>
+			<div class="col-md-5 text-copyright">
+				<p class="copyright copyright-text-right">
+					&copy;<script>document.write(new Date().getFullYear());</script> <a href="index.html" target="_blank" style="color: #a2c0be;">Silverlake MasterSAM</a>
+				</p>        
+			</div>
+		</div>
+	  </div>
+	</footer>
+
+  </div> <!-- .site-wrap -->
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>			
+	<script src="js/easing.min.js"></script>			
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>	
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>	
+	<script src="js/owl.carousel.min.js"></script>			
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>			
+	<script src="js/parallax.min.js"></script>	
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>			
+	<script src="js/mail-script.js"></script>	
+	<script src="js/main.js"></script>	
+
+  
+  </body>
+</html>
