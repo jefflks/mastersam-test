@@ -504,6 +504,18 @@ td, th {
   padding-top: 170px;
 }
 
+.pt-200 {
+  padding-top: 200px;
+}
+
+.pt-220 {
+  padding-top: 220px;
+}
+
+.pt-250 {
+  padding-top: 250px;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -3302,4 +3314,30 @@ ul.feature {
     width: 100%;
     height: 100%;
 	min-height: 300px;
+}
+
+.bullet-list{
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.partner-btn {
+	margin: 10px;
+	text-align: center;
+	background-color: rgba(54,124,175,255);
+	border-radius: 15px;
+	color: #fff;
+	font-size: 24px;
+	line-height: 1cm;
+}
+  
+@media (min-width: 768px) {
+  .partner-btn {
+	padding: 30px 0; 
+  } 
 }

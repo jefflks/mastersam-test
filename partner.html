@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="MasterSAM">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>MasterSAM</title>
+
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="css/linearicons.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/poppin-font.css"> 
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/nice-select.css">					
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+	<header id="header">
+			<div class="container">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div id="logo">
+						<a href="index.html"><img src="img/logo.png" alt="" title="" style="max-height: 90px;"/></a>
+					</div>
+
+					<nav id="nav-menu-container">
+						<ul class="nav-menu">
+						
+							<li class="dropdown">
+								<a id="Products" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Products</a>							
+								<ul class="dropdown-menu" >
+									<li><a href="usam/index.html">Universal Secure Access Management (USAM)</a></li>
+									<li><a href="varia/index.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a></li>									
+								</ul>
+							</li>
+
+							<li class="dropdown">
+								<a id="Solutions" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Solutions</a>							
+								<ul class="dropdown-menu" >
+									
+									<li><a href="pam.html">Privilege Access Management</a></li>
+									<li><a href="varia.html">Multi-factor Authentication</a></li>
+									<li><a href="usam.html">Endpoint Solution</a></li>									
+									<div class="dropdown-divider"></div>
+									<li><a href="arion.html">Secure Remote Access</a></li>									
+									<div class="dropdown-divider"></div>
+									<li><a href="#">Aurora Unified Identity Security</a></li>
+									<li><a href="#">Biometric Secure ID</a></li>
+									
+								</ul>
+							</li>
+							
+							<li><a href="#" style="padding-top: 10px !important">Partners</a></li>
+
+							<li class="dropdown">
+								<a id="Resources" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Resources</a>							
+								<ul class="dropdown-menu" >							
+									<li><a class="dropdown-item" href="resources.html">Resources Library</a></li>
+									<div class="dropdown-divider"></div>
+									<li><a class="dropdown-item" href="resources.html#techdoc">Technical Documentation</a></li>
+									<li><a class="dropdown-item" href="resources.html#whitepaper">White Paper</a></li>
+								</ul>
+							</li>					
+							
+							<li><a href="about.html" style="padding-top: 10px !important">About</a></li>
+							<li><a href="contact.html" style="padding-top: 10px !important">Contact</a></li>
+							<a href="GetInTouch.html" class="primary-btn header-btn text-white">Request for Demo</a>
+						</ul>
+						
+					</nav>
+					
+
+					<div id="mobile-nav-toggle">
+						<li id="dropbtn" class="fa fa-bars" onclick="openMenu()"></li>
+					</div>
+					
+					<div id="mobile-nav" class="side-nav">
+						<button id="dropbtn" class="dropdown-btn">Product
+							<i class="fa fa-caret-down"></i>
+						</button>
+						
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="usam/index.html">Universal Secure Access Management (USAM)</a>
+							<a class="dropdown-item white-space-normal" href="varia/index.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a>			
+						</div>
+						
+						
+						<button id="dropbtn" class="dropdown-btn">Solutions
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="pam.html">Privilege Access Management</a>
+							<a class="dropdown-item white-space-normal" href="varia.html">Multi-factor Authentication</a>
+							<a class="dropdown-item white-space-normal" href="usam.html">Endpoint Solution</a>									
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item white-space-normal" href="arion.html">Secure Remote Access</a>									
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item white-space-normal" href="#">Aurora Unified Identity Security</a>
+							<a class="dropdown-item white-space-normal" href="#">Biometric Secure ID</a>
+						</div>
+						<a href="#">Partners</a>
+						
+						<button id="dropbtn" class="dropdown-btn">Resources
+							<i class="fa fa-caret-down"></i>
+						</button>
+						
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="resources.html">Resources Library</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item white-space-normal" href="resources.html#techdoc">Technical Documentation</a>
+							<a class="dropdown-item white-space-normal" href="resources.html#whitepaper">White Paper</a>			
+						</div>
+						
+						<a href="contact.html">Contact</a>
+						
+						<a href="https://www.gartner.com/document/3996938?ref=shareSummary" class="primary-btn header-btn text-uppercase">Request for Demo</a>
+					</div>
+					<script>		
+						// Close the dropdown menu if the user clicks outside of it
+						window.onclick = function(event) {
+							if (event.target.id != 'dropbtn') {
+								document.getElementById("mobile-nav").classList.remove('show');
+							}
+						}
+						
+						var dropdown = document.getElementsByClassName("dropdown-btn");
+						var i;
+
+						for (i = 0; i < dropdown.length; i++) {
+						  dropdown[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var dropdownContent = this.nextElementSibling;
+							if (dropdownContent.style.display === "block") {
+							  dropdownContent.style.display = "none";
+							} else {
+							  dropdownContent.style.display = "block";
+							}
+						  });
+						}
+					</script>
+				</div>
+			</div>	
+	</header>
+
+	<section class="recent-work-area m-3" id="partners">
+		<div class="container">
+			<!-- <br/><br/> -->
+			<div class="row d-flex justify-content-center">
+				<div class="col-12 d-flex justify-content-center text-white text-center align-self-center" style="background-image: url('img/partnership.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; min-height: 475px; box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 30%);">
+					<div class="col-8 pt-220">
+						<h1 class="text-white font-weight-bold">Partners</h1>
+					</div>
+				</div>				
+			</div>
+		</div>	
+	</section>
+  
+	<section class="recent-work-area m-3" id="partners-desc">
+      <div class="container">        
+        <div class="row" data-aos="fade-up">		
+			<div class="col-lg-8">
+				<div class="m-3">
+					<h1>MasterSAM Alliance Program​</h1>
+					<ul class="bullet-list">
+						<li>MasterSAM Partner Alliance Program (MPA) is a newly enhanced program to enhance the <b>value, relevance and opportunities</b> we bring to partners like you.</li>
+						<li>More than ever before, we want to listen and understand, so we can deliver what is <b>most essential / crucial to you.​</b></li>
+						<li>MasterSAM is undergoing an exciting transformation post-pandemic, with keen intent to drive collaborations and drive <b>‘co-successes’</b>; lead the way in creating heightened awareness in the Cyber Security domain, with particular focus on the growing prominence of Privilege Access Management domain </li>
+					</ul>
+				</div>
+				<div class="m-3">
+					<h1>LISTEN.<br>INCENTIVISE.​</h1>
+					<ul class="bullet-list">
+						<li>Alliance members have open access to MasterSAM’ s team for deeper engagement and tap on available resources to enable partners to make the most of this partner relationship and sell better</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<a href="#"><div class="partner-btn">Feedback</div></a>
+				<a href="#"><div class="partner-btn">Deepen Engagement with increased channels of communication</div></a>
+				<a href="#"><div class="partner-btn">Empower and Incentivise partners</div></a>
+			</div>
+		</div>
+	</div>
+	</section>	
+	
+	<section class="recent-work-area pt-100 m-3" id="partners-detail">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="menu-content pt-60 pb-30 col-lg-16">
+						<div class="title text-center">
+							<h1 class="mb-10">Technology Partners</h1>
+						</div>
+					</div>
+				</div>						
+				<div class="row justify-content-center">
+					<div class="col-lg-4 pt-30 pb-30 border m-1">
+						<div id="work-div-1" class="text-center">
+							<div class="content">
+								<img src="img/partners/aws-logo.png" alt="" title="" style="max-width: 300px; max-height: 100px;">
+							</div>
+							<div class="text-left m-3">
+								<p>
+									MasterSAM is an ISV partner of AWS.
+								</p>
+								<p>
+									The AWS ISV Partner Path is a curated path for businesses that provide software solutions that run on or are integrated with AWS.
+								</p>
+								<p>
+									This Partner Path enables MasterSAM to tailor and accelerate our solution deployments on AWS. As MasterSAM has access to AWS resources and programs specifically designed to meet our business goals faster, this translates into an well-architected and cost-efficient solution for our customers.
+								</p>
+								<p>
+									We at MasterSAM are geared to help customers migrate ISV workloads to AWS to help you achieve business goals and accelerate your cloud journey.
+								</p>
+							</div>
+						</div>							
+					</div>
+
+					<div class="col-lg-4 pt-30 pb-30 border m-1">
+						<div id="work-div-2" class="text-center">
+							<div class="content">
+								<img src="img/partners/intel-logo.png" alt="" title="" style="max-width: 300px; max-height: 100px;">
+							</div>
+							<div class="text-left m-3">
+								<p>
+									MasterSAM is a Gold Intel Alliance Partner of Intel.
+								</p>
+								<p>
+									A deep engagement with Intel has allowed us to launch an Intel technology embedded solution : Universal Secure Access Management (USAM).
+								</p>
+								<p>
+									The technology partnership allows us to gain a competitive advantage in supplying complete solutions to our new and existing customers.
+								</p>
+							</div>
+						</div>							
+					</div>
+					
+					<div class="col-lg-4 pt-30 pb-30 border m-1">
+						<div id="work-div-2" class="text-center">
+							<div class="content">
+								<img src="img/partners/logo-gmv.png" alt="" title="" style="max-width: 300px; max-height: 100px;">
+							</div>
+							<div class="text-left m-3">
+								<p>
+									GMV is a privately owned technological business group with an international presence. Founded in 1984, GMV offers its solutions, services and products in very diverse sectors: Aeronautics, Banking and Finances, Space, Defense, Health, Cybersecurity, Intelligent Transportation Systems, Automotive, Telecommunications, and Information Technology for Public Administration and large corporations.
+								</p>
+								<p>
+									Our goal is to support our client's processes by dint of technologically advanced solutions, providing integrated systems, specialized products and services covering the whole life cycle. These range from consultancy and engineering services up to the development of software and hardware, the integration of turnkey systems and operational backup.
+								</p>
+							</div>
+						</div>							
+					</div> 											
+					
+					
+					<div class="col-lg-4 pt-30 pb-30 border m-1">
+						<div id="work-div-2" class="text-center">
+							<div class="content">
+								<img src="img/partners/zietra-logo.png" alt="" title="" style="max-width: 300px; max-height: 100px;">
+							</div>
+							<div class="text-left m-3">
+								<p>
+									Zietra, a Vibing World Inc. intelligent automation platform and AI solutions provider, uses cognitive technology to build technologically superior tools including, but not limited to, Robotic Process Automation, Optical Character Recognition, Conversational AI, Machine Learning, Deep Learning, Natural Language Processing, Intelligent Data Processing & Predictive Analysis.
+								</p>
+								<p>
+									Partnering with Zietra has allowed us to introduce RPA in our PAM offering, thus, allowing it to be positioned as stand-alone service and it can be custom built for the larger enterprise to augment their existing IT ecosystem.
+								</p>
+							</div>
+						</div>							
+					</div> 
+
+					<div class="col-lg-4 pt-30 pb-30 border m-1">
+						<div id="work-div-2" class="text-center">
+							<div class="content">
+								<img src="img/partners/infotech-logo.png" alt="" title="" style="max-width: 300px; max-height: 100px;">
+							</div>
+							<div class="text-left m-3">
+								<p>
+									X Infotech is a global provider and integrator of software solutions for electronic identity (eID) documents and payment cards.
+								</p>
+								<p>
+									Their solutions are behind and integrated into e-passport, national ID card, driver’s license, payment and social smart card programs in dozens of countries around the globe. With secure documents and cards, more advanced services can be offered – whether it is eGovernment, border control, financial inclusion or healthcare and social programs.
+								</p>
+								<p>
+									With our partnership with X Infotech, we are able to empower our clients to achieve more, improving their country’s economic, financial and social position.
+
+								</p>
+							</div>
+						</div>							
+					</div> 	
+						
+				</div>
+			</div>	
+		</section>
+	
+	
+	<footer class="footer-area">
+	  <div class="container pt-2">
+		<div class="row">
+		  <div class="col-md-7">
+				<p class="copyright copyright-text-left">
+					<a href="career.html" style="color: #a2c0be;">Careers</a>
+					&bull; 
+					<a href="contact.html" style="color: #a2c0be;">Contact Us</a>
+					&bull; 
+					<a href="sitemap.html" style="color: #a2c0be;">Sitemap</a>
+					&bull; 
+					<a href="privacy.html" style="color: #a2c0be;">Privacy</a>
+					&bull; 
+					<a href="term.html" style="color: #a2c0be;"><span style="white-space: nowrap;">Terms of Use</span></a>
+				</p>
+			</div>
+			<div class="col-md-5 text-copyright">
+				<p class="copyright copyright-text-right">
+					&copy;<script>document.write(new Date().getFullYear());</script> <a href="index.html" target="_blank" style="color: #a2c0be;">Silverlake MasterSAM</a>
+				</p>        
+			</div>
+		</div>
+	  </div>
+	</footer>
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>			
+	<script src="js/easing.min.js"></script>			
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>	
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>	
+	<script src="js/owl.carousel.min.js"></script>			
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>			
+	<script src="js/parallax.min.js"></script>	
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>			
+	<script src="js/mail-script.js"></script>	
+	<script src="js/main.js"></script>	
+
+  
+  </body>
+</html>
