@@ -31,126 +31,131 @@
 	</head>
 	<body>
 
-	<header id="header">
-		<div class="container">
-			<div class="row align-items-center justify-content-between d-flex">
-				<div id="logo">
-					<a href="index.html"><img src="img/logo.png" alt="" title="" style="max-width: 300px; max-height: 60px;"/></a>
-				</div>
+		<header id="header">
+			<div class="container">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div id="logo">
+						<a href="index.html"><img src="img/logo.png" alt="" title="" style="max-height: 90px;"/></a>
+					</div>
 
-				<nav id="nav-menu-container">
-					<ul class="nav-menu">
-					
-						<li class="dropdown">
-							<a id="Products" data-toggle="dropdown" class="dropdown-toggle">Products</a>							
-							<ul class="dropdown-menu" >
-								<li><a href="usam/index.html">Universal Secure Access Management (USAM)</a></li>
-								<li><a href="varia/index.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a></li>									
-							</ul>
-						</li>
-
-						<li class="dropdown">
-							<a id="Solutions" data-toggle="dropdown" class="dropdown-toggle">Solutions</a>							
-							<ul class="dropdown-menu" >
-								
-								<li><a href="pam.html">Privilege Access Management</a></li>
-								<li><a href="varia/index.html">Multi- Factor Authentication</a></li>
-								<li><a href="usam/index.html">Endpoint Solution</a></li>									
-								<div class="dropdown-divider"></div>
-								<li><a href="nebula/index.html">Secure Remote Access</a></li>									
-								<div class="dropdown-divider"></div>
-								<li><a href="#">Aurora Unified Identity Security</a></li>
-								<li><a href="#">Biometric Secure ID</a></li>
-								
-							</ul>
-						</li>
+					<nav id="nav-menu-container">
+						<ul class="nav-menu">
 						
-						<li><a href="#">Partners</a></li>
+							<li class="dropdown">
+								<a id="Products" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Products</a>							
+								<ul class="dropdown-menu" >
+									<li><a href="usam/index.html">Universal Secure Access Management (USAM)</a></li>
+									<li><a href="varia/index.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a></li>									
+								</ul>
+							</li>
 
-						<li class="dropdown">
-							<a id="Resources" data-toggle="dropdown" class="dropdown-toggle">Resources</a>							
-							<ul class="dropdown-menu" >							
-								<li><a class="dropdown-item" href="resources.html">Resources Library</a></li>
-								<div class="dropdown-divider"></div>
-								<li><a class="dropdown-item" href="resources.html#techdoc">Technical Documentation</a></li>
-								<li><a class="dropdown-item" href="resources.html#whitepaper">White Paper</a></li>
-							</ul>
-						</li>					
+							<li class="dropdown">
+								<a id="Solutions" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Solutions</a>							
+								<ul class="dropdown-menu" >
+									
+									<li><a href="pam.html">Privilege Access Management</a></li>
+									<li><a href="varia.html">Multi-factor Authentication</a></li>
+									<li><a href="usam.html">Endpoint Solution</a></li>									
+									<div class="dropdown-divider"></div>
+									<li><a href="arion.html">Secure Remote Access</a></li>									
+									<div class="dropdown-divider"></div>
+									<li><a href="#">Aurora Unified Identity Security</a></li>
+									<li><a href="#">Biometric Secure ID</a></li>
+									
+								</ul>
+							</li>
+							
+							<li><a href="#" style="padding-top: 10px !important">Partners</a></li>
+
+							<li class="dropdown">
+								<a id="Resources" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Resources</a>							
+								<ul class="dropdown-menu" >							
+									<li><a class="dropdown-item" href="resources.html">Resources Library</a></li>
+									<div class="dropdown-divider"></div>
+									<li><a class="dropdown-item" href="resources.html#techdoc">Technical Documentation</a></li>
+									<li><a class="dropdown-item" href="resources.html#whitepaper">White Paper</a></li>
+								</ul>
+							</li>					
+							
+							<li><a href="about.html" style="padding-top: 10px !important">About</a></li>
+							<li><a href="contact.html" style="padding-top: 10px !important">Contact</a></li>
+							<a href="GetInTouch.html" class="primary-btn header-btn text-white">Request for Demo</a>
+						</ul>
 						
-						<li><a href="about.html">About</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
+					</nav>
+					
 
-				<div id="mobile-nav-toggle">
-					<li id="dropbtn" class="fa fa-bars" onclick="openMenu()"></li>
-				</div>
-				
-				<div id="mobile-nav" class="side-nav">
-					<button id="dropbtn" class="dropdown-btn">Product
-						<i class="fa fa-caret-down"></i>
-					</button>
-					
-					<div class="dropdown-container">
-						<a class="dropdown-item white-space-normal" href="usam/index.html">Universal Secure Access Management (USAM)</a>
-						<a class="dropdown-item white-space-normal" href="varia/index.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a>			
+					<div id="mobile-nav-toggle">
+						<li id="dropbtn" class="fa fa-bars" onclick="openMenu()"></li>
 					</div>
 					
-					
-					<button id="dropbtn" class="dropdown-btn">Solutions
-						<i class="fa fa-caret-down"></i>
-					</button>
-					<div class="dropdown-container">
-						<a class="dropdown-item white-space-normal" href="pam.html">Privilege Access Management</a>
-						<a class="dropdown-item white-space-normal" href="varia/index.html">Multi-Factor Authentication</a>
-						<a class="dropdown-item white-space-normal" href="usam/index.html">Endpoint Solution</a>									
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item white-space-normal" href="nebula/index.html">Secure Remote Access</a>									
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item white-space-normal" href="#">Aurora Unified Identity Security</a>
-						<a class="dropdown-item white-space-normal" href="#">Biometric Secure ID</a>
+					<div id="mobile-nav" class="side-nav">
+						<button id="dropbtn" class="dropdown-btn">Product
+							<i class="fa fa-caret-down"></i>
+						</button>
+						
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="usam/index.html">Universal Secure Access Management (USAM)</a>
+							<a class="dropdown-item white-space-normal" href="varia/index.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a>			
+						</div>
+						
+						
+						<button id="dropbtn" class="dropdown-btn">Solutions
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="pam.html">Privilege Access Management</a>
+							<a class="dropdown-item white-space-normal" href="varia.html">Multi-factor Authentication</a>
+							<a class="dropdown-item white-space-normal" href="usam.html">Endpoint Solution</a>									
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item white-space-normal" href="arion.html">Secure Remote Access</a>									
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item white-space-normal" href="#">Aurora Unified Identity Security</a>
+							<a class="dropdown-item white-space-normal" href="#">Biometric Secure ID</a>
+						</div>
+						<a href="#">Partners</a>
+						
+						<button id="dropbtn" class="dropdown-btn">Resources
+							<i class="fa fa-caret-down"></i>
+						</button>
+						
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="resources.html">Resources Library</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item white-space-normal" href="resources.html#techdoc">Technical Documentation</a>
+							<a class="dropdown-item white-space-normal" href="resources.html#whitepaper">White Paper</a>			
+						</div>
+						
+						<a href="contact.html">Contact</a>
+						
+						<a href="https://www.gartner.com/document/3996938?ref=shareSummary" class="primary-btn header-btn text-uppercase">Request for Demo</a>
 					</div>
-					<a href="#">Partners</a>
-					
-					<button id="dropbtn" class="dropdown-btn">Resources
-						<i class="fa fa-caret-down"></i>
-					</button>
-					
-					<div class="dropdown-container">
-						<a class="dropdown-item white-space-normal" href="resources.html">Resources Library</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item white-space-normal" href="resources.html#techdoc">Technical Documentation</a>
-						<a class="dropdown-item white-space-normal" href="resources.html#whitepaper">White Paper</a>			
-					</div>
-					
-					<a href="contact.html">Contact</a>
-				</div>
-				<script>		
-					// Close the dropdown menu if the user clicks outside of it
-					window.onclick = function(event) {
-						if (event.target.id != 'dropbtn') {
-							document.getElementById("mobile-nav").classList.remove('show');
+					<script>		
+						// Close the dropdown menu if the user clicks outside of it
+						window.onclick = function(event) {
+							if (event.target.id != 'dropbtn') {
+								document.getElementById("mobile-nav").classList.remove('show');
+							}
 						}
-					}
-					
-					var dropdown = document.getElementsByClassName("dropdown-btn");
-					var i;
+						
+						var dropdown = document.getElementsByClassName("dropdown-btn");
+						var i;
 
-					for (i = 0; i < dropdown.length; i++) {
-					  dropdown[i].addEventListener("click", function() {
-						this.classList.toggle("active");
-						var dropdownContent = this.nextElementSibling;
-						if (dropdownContent.style.display === "block") {
-						  dropdownContent.style.display = "none";
-						} else {
-						  dropdownContent.style.display = "block";
+						for (i = 0; i < dropdown.length; i++) {
+						  dropdown[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var dropdownContent = this.nextElementSibling;
+							if (dropdownContent.style.display === "block") {
+							  dropdownContent.style.display = "none";
+							} else {
+							  dropdownContent.style.display = "block";
+							}
+						  });
 						}
-					  });
-					}
-				</script>
+					</script>
+				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
 
 	
@@ -181,32 +186,32 @@
 							
 				<div class="row justify-content-center pb-70">
 					<div class="sigle-service col-lg-3 col-md-6 text-center pt-3">
-						<span class="lnr lnr-book"></span>
-						<a href="doc/PAM DataSheets.pdf" target="_blank"><p class="pt-3">PAM DataSheets</p></a>
+						<a href="doc/PAM DataSheets.pdf" target="_blank"><span class="lnr lnr-book"></span>
+						<p class="pt-3">PAM DataSheets</p></a>
 					</div>
 					<div class="sigle-service col-lg-3 col-md-6 text-center pt-3">
-						<span class="lnr lnr-book"></span>
-						<a href="doc/VariA DataSheet.pdf" target="_blank"><p class="pt-3">VariA DataSheet</p></a>
+						<a href="doc/VariA DataSheet.pdf" target="_blank"><span class="lnr lnr-book"></span>
+						<p class="pt-3">VariA DataSheet</p></a>
 					</div>
 					<div class="sigle-service col-lg-3 col-md-6 text-center pt-3">
-						<span class="lnr lnr-spell-check"></span>
-						<a href="doc/VariA MFASP X Series  Feature List-19022020.pdf" target="_blank"><p class="pt-3">VARIA X Series Features List</p></a>
+						<a href="doc/VariA MFASP X Series Feature List.pdf" target="_blank"><span class="lnr lnr-spell-check"></span>
+						<p class="pt-3">VARIA X Series Features List</p></a>
 					</div>
 					<div class="sigle-service col-lg-3 col-md-6 text-center pt-3">
-						<span class="lnr lnr-spell-check"></span>
-						<a href="doc/SIA USAM X Series Feature List 2021.pdf" target="_blank"><p class="pt-3">USAM X Series Features List</p></a>
+						<a href="doc/SIA USAM X Series Feature List 2021.pdf" target="_blank"><span class="lnr lnr-spell-check"></span>
+						<p class="pt-3">USAM X Series Features List</p></a>
 					</div>
 					<div class="sigle-service col-lg-3 col-md-6 text-center pt-3">
-						<span class="lnr lnr-rocket"></span>
-						<a href="doc/ARION - Overview15042020.pdf" target="_blank"><p class="pt-3">Arion Overview</p></a>
+						<a href="doc/ARION - Overview15042020.pdf" target="_blank"><span class="lnr lnr-rocket"></span>
+						<p class="pt-3">Arion Overview</p></a>
 					</div>
 					<div class="sigle-service col-lg-3 col-md-6 text-center pt-3">
-						<span class="lnr lnr-chart-bars"></span>
-						<a href="doc/WorkfromAnywhere Operational Threat Model - Infographic.pdf" target="_blank"><p class="pt-3">WorkfromAnywhere Infographic</p></a>
+						<a href="doc/WorkfromAnywhere Operational Threat Model - Infographic.pdf" target="_blank"><span class="lnr lnr-chart-bars"></span>
+						<p class="pt-3">WorkfromAnywhere Infographic</p></a>
 					</div>
 					<div class="sigle-service col-lg-3 col-md-6 text-center pt-3">
-						<span class="lnr lnr-spell-check"></span>
-						<a href="doc/AURORA Unified Identity Security Platform Feature List v1.1-up.pdf" target="_blank"><p class="pt-3">AURORA Unified Identity Security Platform - Feature List</p></a>
+						<a href="doc/AURORA Unified Identity Security Platform Feature List v1.1-up.pdf" target="_blank"><span class="lnr lnr-spell-check"></span>
+						<p class="pt-3">AURORA Unified Identity Security Platform - Feature List</p></a>
 					</div>		
 				</div>
 			</div>	
