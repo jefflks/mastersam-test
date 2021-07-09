@@ -2608,26 +2608,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: rgba(0, 0, 0, 0.78);
 }
 
-.single-recent-work .content h4 {
+.single-recent-work .content-1 h4 {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-.single-recent-work .content p {
+.single-recent-work .content-1 p {
   padding: 20px 0;
 }
 
-.single-recent-work .content span, .single-recent-work .content p {
+.single-recent-work .content-1 span, .single-recent-work .content-1 p {
   color: #8c8d9e;
 }
 
-.single-recent-work .content .desc {
+.single-recent-work .content-1 .desc {
   padding-left: 15px;
 }
 
-.single-recent-work .content h6, .single-recent-work .content span {
+.single-recent-work .content-1 h6, .single-recent-work .content-1 span {
   font-weight: 100;
 }
 
