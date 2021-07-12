@@ -3196,91 +3196,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 	padding-bottom: 5px;
 }
 
-.pam-feature-1 {
-	background-image: url(../img/products/PAMFeature_1.png); 
-	background-repeat: no-repeat; 
-	background-size: 100% 100%; 
-	min-height: 250px;
-}
-
-.pam-feature-2 {
-	background-image: url(../img/products/PAMFeature_2.png); 
-	background-repeat: no-repeat; 
-	background-size: 100% 100%; 
-	min-height: 250px;
-}
-
-.pam-feature-3 {
-	background-image: url(../img/products/PAMFeature_3.png); 
-	background-repeat: no-repeat; 
-	background-size: 100% 100%; 
-	min-height: 250px;
-}
-
-.pam-feature-4 {
-	background-image: url(../img/products/PAMFeature_4.png); 
-	background-repeat: no-repeat; 
-	background-size: 100% 100%; 
-	min-height: 250px;
-}
-
-.pam-feature-5 {
-	background-image: url(../img/products/PAMFeature_5.png); 
-	background-repeat: no-repeat; 
-	background-size: 100% 100%; 
-	min-height: 250px;
-}
-
 .pam-text{
-	margin-left: 80px;
-}
-
-@media (max-width: 991.98px) {
-	
-	.pam-feature-1 {
-		background-image: url(../img/products/PAMFeature_sm_1.png); 
-		background-repeat: no-repeat; 
-		background-size: 100% 100%; 
-		min-height: 250px;
-	}
-
-	.pam-feature-2 {
-		background-image: url(../img/products/PAMFeature_sm_2.png); 
-		background-repeat: no-repeat; 
-		background-size: 100% 100%; 
-		min-height: 250px;
-	}
-
-	.pam-feature-3 {
-		background-image: url(../img/products/PAMFeature_sm_3.png); 
-		background-repeat: no-repeat; 
-		background-size: 100% 100%; 
-		min-height: 250px;
-	}
-
-	.pam-feature-4 {
-		background-image: url(../img/products/PAMFeature_sm_4.png); 
-		background-repeat: no-repeat; 
-		background-size: 100% 100%; 
-		min-height: 250px;
-	}
-
-	.pam-feature-5 {
-		background-image: url(../img/products/PAMFeature_sm_5.png); 
-		background-repeat: no-repeat; 
-		background-size: 100% 100%; 
-		min-height: 250px;
-	}
-	
-	.pam-text{
-		margin-left: 90px;
-	}
-}
-
-@media (max-width: 767.98px) {
-    .pam-text{
-		margin-left: 40px;
-	}
+	margin-left: 40px;
+	margin-right: 10px;
 }
 
 ul.feature {
