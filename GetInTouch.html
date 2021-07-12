@@ -158,7 +158,7 @@
 			</div>
 		</header>
 		
-		<section class="service-area pt-100" id="offer">
+		<section class="service-area pt-100 m-2" id="offer">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 px-0 ">
@@ -189,23 +189,19 @@
 										<label for="form-email">Business Email:</label>
                 						<input type="email" name="email" id="form-email" required>
             						</div>
-            						<input type="submit" value="Get In Touch" class="btn text-white" style="background-color: rgba(245,91,43,1)">
-									<br/><br/><br/>
-			
-            						<div submit-success>
-                						<template type="amp-mustache">
-                    						<p class="form-submit-response">
-                        						Thank you {{name}}. Our team will be in touch.
+            						<input type="submit" value="Get In Touch" class="btn text-white" style="border: none; background-image: -moz-linear-gradient(0deg, #181819 0%, #195df6 100%); background-image: -webkit-linear-gradient(0deg, #181819 0%, #195df6 100%); background-image: -ms-linear-gradient(0deg, #181819 0%, #195df6 100%);">
+									<br/>
+            						<div id="submit-success" class="d-none">
+                    						<p class="form-submit-response text-success m-1">
+                        						Thank you. Our team will be in touch.
                     						</p>
-                						</template>
             						</div>
-            						<div submit-error>
-                						<template type="amp-mustache">
-                    						<p class="form-submit-response">
+            						<div id="submit-error" class="d-none">
+                    						<p class="form-submit-response text-danger m-1">
                         						Oops! Sorry, there was an error.
                     						</p>
-                						</template>
             						</div>
+									<br/>
         						</form>
     						</div>
 						</div>
@@ -265,7 +261,10 @@
 	<script>
 	$("form").submit(function(eventObj) {
 	debugger;
-		 $(this).find('input[name="entry.1233073601"]').remove();
+	var successMsg = document.getElementById("submit-success");
+	var errMsg = document.getElementById("submit-error");
+	
+		$(this).find('input[name="entry.1233073601"]').remove();
 		$(this).find('input[name="entry.215012651"]').remove();
 		$(this).find('input[name="entry.1119151308"]').remove();
     $(this).append('<input type="hidden" name="entry.1233073601" value="'+$("#form-name").val()+'" /> ');
@@ -274,7 +273,12 @@
 	$.post($(this).attr('action'), $(this).serialize(), function(response){
 		debugger;
       },'json');
-	  alert('Thank you ' + $("#form-name").val() + '. Our team will be in touch.');
+	  //alert('Thank you ' + $("#form-name").val() + '. Our team will be in touch.');
+	  $("#form-name").val("");
+	  $("#form-email").val("");
+		
+		errMsg.classList.add("d-none");
+		successMsg.classList.remove("d-none");
     return false;
 });
 	var coll = document.getElementsByClassName("collapsible");
