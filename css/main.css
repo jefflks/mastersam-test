@@ -2170,6 +2170,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
   cursor: pointer;
   outline: none;
+  background-color: #fff !important;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
@@ -3281,10 +3282,6 @@ ul.feature {
   font-weight: bold;
   float: right;
   margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
 }
 
 .content {
