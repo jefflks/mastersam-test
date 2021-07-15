@@ -2171,6 +2171,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   outline: none;
   background-color: #fff !important;
+  font-width: 400;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
