@@ -55,8 +55,8 @@
 								<ul class="dropdown-menu" >
 									
 									<li><a href="pam.html">Privileged Access Management</a></li>
-									<li><a href="mfa.html">Multi-factor Authentication</a></li>
-									<li><a href="endpoint.html">Endpoint Solution</a></li>									
+									<li><a href="varia.html">Multi-factor Authentication</a></li>
+									<li><a href="usam.html">Endpoint Solution</a></li>									
 									
 									<li><a href="arion.html">Secure Remote Access</a></li>									
 									
@@ -106,7 +106,7 @@
 						</button>
 						<div class="dropdown-container">
 							<a class="dropdown-item white-space-normal" href="pam.html">Privileged Access Management</a>
-							<a class="dropdown-item white-space-normal" href="mfa.html">Multi-factor Authentication</a>
+							<a class="dropdown-item white-space-normal" href="varia.html">Multi-factor Authentication</a>
 							<a class="dropdown-item white-space-normal" href="usam.html">Endpoint Solution</a>									
 							
 							<a class="dropdown-item white-space-normal" href="arion.html">Secure Remote Access</a>									
@@ -180,7 +180,7 @@
 						<!-- Umai GetInTouch Start -->
 						<div class="subscribe-card-container">
     						<div class="subscribe-card">
-        						<form method="post" class="main-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfXEZukcxdZOKmhSky8kzrPvMM17RQO8LFQGznm8QXNZoPH6Q/formResponse" target="_top">
+        						<form method="post" class="main-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeV2V6KlzKK0KPExon0pJ35VERQxjpGJt__3k1cAfCKevUmhA/formResponse" target="_top">
             						<div class="input">
 										<label for="form-name">Name:</label>
                 						<input type="text" name="name" id="form-name" required>
@@ -264,12 +264,12 @@
 	var successMsg = document.getElementById("submit-success");
 	var errMsg = document.getElementById("submit-error");
 	
-		$(this).find('input[name="entry.1233073601"]').remove();
-		$(this).find('input[name="entry.215012651"]').remove();
-		$(this).find('input[name="entry.1119151308"]').remove();
-    $(this).append('<input type="hidden" name="entry.1233073601" value="'+$("#form-name").val()+'" /> ');
-	$(this).append('<input type="hidden" name="entry.215012651" value="'+$("#form-email").val()+'" /> ');
-	$(this).append('<input type="hidden" name="entry.1119151308" value="'+$("#form-name").val()+' just Subscribed to our Newsletter" /> ');
+		$(this).find('input[name="entry.1065629051"]').remove();
+		$(this).find('input[name="entry.994376392"]').remove();
+		$(this).find('input[name="entry.1546600846"]').remove();
+    $(this).append('<input type="hidden" name="entry.1065629051" value="'+$("#form-name").val()+'" /> ');
+	$(this).append('<input type="hidden" name="entry.994376392" value="'+$("#form-email").val()+'" /> ');
+	$(this).append('<input type="hidden" name="entry.1546600846" value="'+$("#form-name").val()+' just clicked GetInTouch" /> ');
 	$.post($(this).attr('action'), $(this).serialize(), function(response){
 		debugger;
       },'json');
