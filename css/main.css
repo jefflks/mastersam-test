@@ -3010,8 +3010,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	display: none;
 }
 
-.slide-banner-area {
-  min-height: 500px;    
+.slide-banner-area {  
   padding-top: 100px;
 }
 
