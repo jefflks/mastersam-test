@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="MasterSAM">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>MasterSAM</title>
+
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="css/linearicons.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/poppin-font.css"> 
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/nice-select.css">					
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/main.css">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+	<body>
+		<header id="header">
+			<div class="container">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div id="logo">
+						<a href="index.html"><img src="img/logo.png" alt="" title="" style="max-height: 90px;"/></a>
+					</div>
+
+					<nav id="nav-menu-container">
+						<ul class="nav-menu">
+						
+							<li class="dropdown">
+								<a id="Products" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Products</a>							
+								<ul class="dropdown-menu" >
+									<li><a href="usam.html">Universal Secure Access Management (USAM)</a></li>
+									<li><a href="varia.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a></li>									
+								</ul>
+							</li>
+
+							<li class="dropdown">
+								<a id="Solutions" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Solutions</a>							
+								<ul class="dropdown-menu" >
+									
+									<li><a href="pam.html">Privileged Access Management</a></li>
+									<li><a href="mfa.html">Multi-factor Authentication</a></li>
+									<li><a href="endpoint.html">Endpoint Solution</a></li>									
+									
+									<li><a href="arion.html">Secure Remote Access</a></li>									
+									
+									<li><a href="aurora.html">Aurora Unified Identity Security</a></li>
+									<li class="d-none"><a href="#">Biometric Secure ID</a></li>
+									
+								</ul>
+							</li>
+							
+							<li><a href="partner.html" style="padding-top: 10px !important">Partners</a></li>
+
+							<li class="dropdown">
+								<a id="Resources" data-toggle="dropdown" class="dropdown-toggle" style="padding-top: 10px !important">Resources</a>							
+								<ul class="dropdown-menu" >							
+									<li><a class="dropdown-item" href="resources.html">Resources Library</a></li>
+									
+									<li><a class="dropdown-item" href="resources.html#techdoc">Technical Documentation</a></li>
+									<li><a class="dropdown-item" href="resources.html#whitepaper">White Paper</a></li>
+								</ul>
+							</li>					
+							
+							<li><a href="about.html" style="padding-top: 10px !important">About</a></li>
+							<li><a href="contact.html" style="padding-top: 10px !important">Contact</a></li>
+							
+						</ul>
+						
+					</nav>
+					
+
+					<div id="mobile-nav-toggle">
+						<li id="dropbtn" class="fa fa-bars" onclick="openMenu()"></li>
+					</div>
+					
+					<div id="mobile-nav" class="side-nav">
+						<button id="dropbtn" class="dropdown-btn">Product
+							<i class="fa fa-caret-down"></i>
+						</button>
+						
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="usam.html">Universal Secure Access Management (USAM)</a>
+							<a class="dropdown-item white-space-normal" href="varia.html">VARIA Multi-Factor Authentication Service Platform (MFASP)</a>			
+						</div>
+						
+						
+						<button id="dropbtn" class="dropdown-btn">Solutions
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="pam.html">Privileged Access Management</a>
+							<a class="dropdown-item white-space-normal" href="mfa.html">Multi-factor Authentication</a>
+							<a class="dropdown-item white-space-normal" href="usam.html">Endpoint Solution</a>									
+							
+							<a class="dropdown-item white-space-normal" href="arion.html">Secure Remote Access</a>									
+							
+							<a class="dropdown-item white-space-normal" href="aurora.html">Aurora Unified Identity Security</a>
+							<a class="dropdown-item white-space-normal d-none" href="#">Biometric Secure ID</a>
+						</div>
+						<a href="partner.html">Partners</a>
+						
+						<button id="dropbtn" class="dropdown-btn">Resources
+							<i class="fa fa-caret-down"></i>
+						</button>
+						
+						<div class="dropdown-container">
+							<a class="dropdown-item white-space-normal" href="resources.html">Resources Library</a>
+							
+							<a class="dropdown-item white-space-normal" href="resources.html#techdoc">Technical Documentation</a>
+							<a class="dropdown-item white-space-normal" href="resources.html#whitepaper">White Paper</a>			
+						</div>
+						
+						<a href="contact.html">Contact</a>
+						
+
+					</div>
+					<script>		
+						// Close the dropdown menu if the user clicks outside of it
+						window.onclick = function(event) {
+							if (event.target.id != 'dropbtn') {
+								document.getElementById("mobile-nav").classList.remove('show');
+							}
+						}
+						
+						var dropdown = document.getElementsByClassName("dropdown-btn");
+						var i;
+
+						for (i = 0; i < dropdown.length; i++) {
+						  dropdown[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var dropdownContent = this.nextElementSibling;
+							if (dropdownContent.style.display === "block") {
+							  dropdownContent.style.display = "none";
+							} else {
+							  dropdownContent.style.display = "block";
+							}
+						  });
+						}
+					</script>
+				</div>
+			</div>
+		</header>
+		
+		<section class="slide-banner-area relative" id="home">
+			<div class="slideshow-container">
+			<div class="slideshow-inner">
+				<div class="mySlides">
+				  <div class="overlay"></div>
+				  <div class="numbertext">1 / 5</div>
+				  <div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6 text-lg-right text-md-center text-sm-center text-xs-center text-center">
+						  <img src="img/achievement.jpg" style="height:400px; width:60%">
+						</div>
+						<div class="col-sm-4 pt-80" align="center">
+							<div style="color:black;">
+								<h4 class="text-uppercase">Achievement</h4>
+								<h2 class="text-uppercase" style="color:black;">
+									2021 IAM Leaders’ Guide <br>to Privileged Access Management					
+								</h2>
+								<p class="pt-10 pb-10" style="width: 60%">
+									<strong style="font-weight: 900;">MasterSAM</strong> is recognised in IAM Leader's Guide for PAM 2021<br>
+									Get to know more about our full PAM functionality
+								</p>
+								<a href="https://www.gartner.com/document/3996938?ref=shareSummary" class="primary-btn header-btn text-uppercase">Read the Report</a>
+							</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="mySlides">
+				  <div class="overlay"></div>
+				  <div class="numbertext">2 / 5</div>
+				  <div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6 text-lg-right text-md-center text-sm-center text-xs-center text-center">
+						  <img src="img/IndexFlash2_Zietra.jpg" style="height:400px; width:60%">
+						</div>
+						<div class="col-sm-4 pt-80" align="center">
+							<div style="color:black;">
+								<h4 class="text-uppercase">Robotic Process Automation</h4>
+								<h2 class="text-uppercase" style="color:black;">
+									AI to Drive Business Optimization				
+								</h2>
+								<p class="pt-10 pb-10" style="width: 60%">
+									<strong style="font-weight: 900;">MasterSAM Zietra</strong> offers powerful AI-driven solutions to help businesses cut down on manual and repetitive tasks, automate processes, increase efficiency and most importantly, save on time, cost and resources.<br>
+								</p>
+								<a href="GetInTouch.html" class="primary-btn header-btn text-uppercase">Discover Now</a>
+							</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+
+				<div class="mySlides">
+					<div class="overlay"></div>
+					<div class="numbertext">3 / 5</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6 text-lg-right text-md-center text-sm-center text-xs-center text-center">
+								<img src="img/IndexFlash3_EdgeSec.jpg" style="height:400px; width:60%">
+							</div>
+							<div class="col-sm-4 pt-80" align="center">
+								<div style="color:black;">
+									<h4 class="text-uppercase">Edge Security</h4>
+									<h2 class="text-uppercase" style="color:black;">
+										USAM<br>An Intel Market Ready Solution			
+									</h2>
+									<p class="pt-10 pb-10" style="width: 60%">
+										Industries make the world go round.<br>
+										<strong style="font-weight: 900;">MasterSAM</strong> gives them a helping hand through Information Technology solutions that drive the Digital Economy.
+									</p>
+									<a href="usam.html" class="primary-btn header-btn text-uppercase">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="mySlides">
+					<div class="overlay"></div>
+					<div class="numbertext">4 / 5</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6 text-lg-right text-md-center text-sm-center text-xs-center text-center">
+								<img src="img/IndexFlash4_IdentitySec.jpg" style="height:400px; width:60%">
+							</div>
+							<div class="col-sm-4 pt-80" align="center">
+								<div style="color:black;">
+									<h4 class="text-uppercase">Identity Security</h4>
+									<h2 class="text-uppercase" style="color:black;">
+										A comprehensive<br> Identity Security approach	
+									</h2>
+									<p class="pt-10 pb-10" style="width: 60%">
+										<strong style="font-weight: 900;">MasterSAM</strong> secures all identities - throughout the entire cycle of accessing critical assets.
+									</p>
+									<a href="aurora.html" class="primary-btn header-btn text-uppercase">Discover Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="mySlides">
+					<div class="overlay"></div>
+					<div class="numbertext">5 / 5</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6 text-lg-right text-md-center text-sm-center text-xs-center text-center">
+								<img src="img/IndexFlash5_EnforcePriv.jpg" style="height:400px; width:60%">
+							</div>
+							<div class="col-sm-4 pt-80" align="center">
+								<div style="color:black;">
+									<h4 class="text-uppercase">Enforce Privilege</h4>
+									<h2 class="text-uppercase" style="color:black;">
+										Thwart potential threats<br> with Least Privilege
+									</h2>
+									<p class="pt-10 pb-10" style="width: 60%">
+										Discover <strong style="font-weight: 900;">MasterSAM</strong> Privileged Access Management capabilities
+									</p>
+									<a href="pam.html" class="primary-btn header-btn text-uppercase">Discover Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				  <!-- Next and previous buttons -->
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			</div>
+			<br>
+
+			<div class="text-center pb-20">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>	
+			  <span class="dot" onclick="currentSlide(4)"></span>	
+			  <span class="dot" onclick="currentSlide(5)"></span>	  
+			</div>
+			
+			
+			<script>
+				var slideIndex = 1;
+
+				var myTimer;
+
+				var slideshowContainer;
+
+				window.addEventListener("load",function() {
+					showSlides(slideIndex);
+					myTimer = setInterval(function(){plusSlides(1)}, 4000);
+				  
+					//COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+					slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+				  
+					//UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+					// slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+				  
+					slideshowContainer.addEventListener('mouseenter', pause)
+					slideshowContainer.addEventListener('mouseleave', resume)
+				})
+
+				// NEXT AND PREVIOUS CONTROL
+				function plusSlides(n){
+				  clearInterval(myTimer);
+				  if (n < 0){
+					showSlides(slideIndex -= 1);
+				  } else {
+				   showSlides(slideIndex += 1); 
+				  }
+				  
+				  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+				  
+				  if (n === -1){
+					myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+				  } else {
+					myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+				  }
+				}
+
+				//Controls the current slide and resets interval if needed
+				function currentSlide(n){
+				  clearInterval(myTimer);
+				  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n){
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";
+				  dots[slideIndex-1].className += " active";
+				}
+
+				pause = () => {
+				  clearInterval(myTimer);
+				}
+
+				resume = () =>{
+				  clearInterval(myTimer);
+				  myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+				}
+			</script>
+		</section>
+		
+		<!-- Start Intro Area -->
+		<section class="recent-work-area pt-20" id="intro" style="background-color: rgba(249,249,249,1)">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="menu-content pt-10 pb-10 col-lg-16">
+						<div class="title text-center">
+							<h1 class="mb-10">Securing Access is Our Top Priority</h1>
+						</div>
+					</div>
+				</div>	
+				<div class="row">
+					<video class="col-lg-6" controls autoplay loop muted >
+					  <source src="video/USAM Silverlake.mp4" type="video/mp4">
+					  Your browser does not support the video tag.
+					</video>
+					<div class="col-lg-6">
+					<p class="m-3">
+						<br><br>
+						Powered by advanced Intel technologies, MasterSAM's Universal Secure Access Management (USAM) effectively thwarts cyberattacks by monitoring and recording privileged activities; 
+						eliminating hard-coded credentials and applications; and guaratees near real-time detection and alerts of anomalies. 
+						<br><br>
+						Fully automating the provisioning and de-provisioning process, USAM gives IT personnel full power over the access rights of employees, partners, contractors, vendors, and guests.
+						
+						
+						<div class="title text-center">
+							<a href="GetInTouch.html" class="primary-btn header-btn text-uppercase">Get Free Demo</a>
+						</div>
+					</p>
+					</div>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				</div>
+			</div>
+		</section>
+		<!-- End Intro Area -->
+		
+		
+		<!-- Start product Area -->
+		<section class="recent-work-area pt-20" id="product">
+			<div class="container">
+				
+				<div class="row d-flex justify-content-center">
+					<div class="menu-content pt-10 pb-10 col-lg-16">
+						<div class="title text-center">
+							<h1 class="mb-10">Our Featured Solutions</h1>
+							<a href="GetInTouch.html" class="primary-btn header-btn text-uppercase">Learn More</a>
+						</div>
+					</div>
+				</div>	
+				
+				<div class="row d-flex justify-content-center pb-40">
+					
+					<div class="col-lg-4 pt-10 pb-10" style="max-width: 380px;">
+						<div id="work-div-1" class="single-recent-work" style="background: url(img/w1.jpg) center; background-size:cover; background-repeat: no-repeat; min-height: 25px;">
+							<div class="content-1">
+								<a href="varia.html"><img class="d-block mx-auto" src="img/icon0.png" style="height: 107px; width: 107px;">
+								<h4 class="text-white text-center pt-10" style="min-height:75px;">
+								Privileged<br/>
+								Access Management<br/>
+								<br/>
+								</h4>
+								</a>
+							</div>
+						</div>								
+					</div> 	
+
+					<div class="col-lg-4 pt-10 pb-10" style="max-width: 380px;">
+						<div id="work-div-2" class="single-recent-work" style="background: url(img/w2.jpg) center; background-size:cover; background-repeat: no-repeat; min-height: 25px;">
+							<div class="content-1">
+								<a href="varia.html"><img class="d-block mx-auto" src="img/icon3.png" style="height: 107px; width: 107px;">
+								<h4 class="text-white text-center pt-10" style="min-height:75px;">
+								VariA<br/>
+								Multi-Factor Authentication<br/>
+								Service Platform<br/>
+								</h4>
+								</a>
+							</div>
+						</div>								
+					</div> 											
+
+					<div class="col-lg-4 pt-10 pb-10"  style="max-width: 380px;">
+						<div id="work-div-3" class="single-recent-work" style="background: url(img/w3.jpg) center; background-size:cover; background-repeat: no-repeat; min-height: 25px;">
+							<div class="content-1">
+								<a href="usam.html"><img class="d-block mx-auto" src="img/icon2.png" style="height: 107px; width: 107px;">
+									<h4 class="text-white text-center pt-10" style="min-height:75px">
+										Universal</br>
+										Secure Access Management</br>
+										(USAM)</br>
+									</h4>
+								</a>
+							</div>
+						</div>							
+					</div>
+				</div>
+			</div>	<!-- <div class="container"> -->
+		</section>
+		<!-- End product Area -->
+		
+
+		<!-- start Challenges Area-->
+		<section class="recent-work-area pt-20 bg-light" id="Challenges" > 
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+				
+					<div class="menu-content pt-10 pb-10 col-lg-8">
+						<div class="title text-center">
+							<h1 class="mb-10">Your Challenges</h1>
+							<p class="highlight">
+								Begin your cyber security journey with us.<br>Allow us to enhance the security posture of your organization.
+								<br>
+								<!-- <a href="GetInTouch.html" class="primary-btn header-btn text-center text-uppercase">Get in Touch</a> -->
+								<img src="img/Challenges_1.png" alt="Image" class="img-fluid pt-10 pb-10"></img>
+							</p>	
+						</div>	
+					</div>
+					
+					<br>
+				</div>
+			</div>
+		</section>
+		<!-- End Challenges Area-->
+				
+
+		<!-- start Industries Area-->
+		<section class="recent-work-area pt-20" id="Industries"> 
+			<div class="container">
+				<div class="title text-center">
+					<h1 class="mb-10">Industries</h1>
+					<p class="highlight">
+						Our clients come from the below industry verticals
+					</p>	
+				</div>	
+						
+				<div class="row justify-content-center pb-20">
+					
+					<div class="sigle-service col-lg-1 col-md-2 col-sm-4 col-4 text-center pt-3">
+						<span><img src="img/IV_FinServices.png" class="img-fluid h-30 w-30"></span>
+						<p class="pt-3 font-weight-bold">Financial Services</p>
+					</div>
+					<div class="sigle-service col-lg-1 col-md-2 col-sm-4 col-4 text-center pt-3">
+						<span><img src="img/IV_Insurance.png" class="img-fluid h-30 w-30"></span>
+						<p class="pt-3 font-weight-bold">Insurance</p>
+					</div>
+					<div class="sigle-service col-lg-1 col-md-2 col-sm-4 col-4 text-center pt-3">
+						<span><img src="img/IV_EOG.png" class="img-fluid h-30 w-30"></span>
+						<p class="pt-3 font-weight-bold">Energy, Oil & Gas</p>
+					</div>
+					<div class="sigle-service col-lg-1 col-md-2 col-sm-4 col-4 text-center pt-3">
+						<span><img src="img/IV_Telecoms.png" class="img-fluid h-30 w-30"></span>
+						<p class="pt-3 font-weight-bold">Telecoms</p>
+					</div>																		
+					<div class="sigle-service col-lg-1 col-md-2 col-sm-4 col-4 text-center pt-3">
+						<span><img src="img/IV_Retail.png" class="img-fluid h-30 w-30"></span>
+						<p class="pt-3 font-weight-bold">Retail</p>
+					</div>
+					<div class="sigle-service col-lg-1 col-md-2 col-sm-4 col-4 text-center pt-3">
+						<span><img src="img/IV_Logistics.png" class="img-fluid h-30 w-30"></span>
+						<p class="pt-3 font-weight-bold">Logistics</p>
+					</div>
+					
+				</div>
+				
+			</div>
+		</section>
+		<!-- End Industries Area-->
+		
+		<!-- start portfolio Area-->
+		
+		<section class="recent-work-area pt-20 bg-light" id="CustomersSay"> 
+			<div class="container">
+				<div class="title text-center">
+					<h1 class="mb-10">What Our Customers Say</h1>
+					<p class="highlight">
+						Businesses from many sectors use our solutions to experience tangible benefits,<br/>from operating improvements and lower compliance impact to cutting costs and improving efficiency.<br/>See what they say.<br/><br/>
+						<a href="GetInTouch.html" class="primary-btn header-btn text-center text-uppercase">Get Free Demo</a>
+					</p>
+										
+				</div>
+		
+				<div class="row">
+					<div class="col-lg-3 col-md-6 px-0">
+						<img src="img/f5.jpg" class="img-fluid h-100 w-100">
+					</div>
+					<div class="bg-dark col-lg-3 col-md-6">
+						<div class="pt-3 pb-3">
+							<img src="img/partners/gartner_badge.png" alt="Gartner customers choice" style="width: 200px;"></img>
+						</div>
+						<div>
+							<h4 class="text-white text-left">"A Practical And Cost-Effective Solution For Privilege Management System"</h4>
+							<p class="text-white text-left">System Engineer,<br/>Infrastructure and Operations
+							<br><a class="text-left" href="https://www.gartner.com/reviews/review/view/3529984">Read full review</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 px-0">
+						<img src="img/f1.jpg" class="img-fluid h-100 w-100"></img>
+					</div>
+					<div class="bg-dark col-lg-3 col-md-6">
+						<div class="pt-3 pb-3">
+							<img src="img/partners/gartner_badge.png" alt="Gartner customers choice" style="width: 200px;"></img>
+						</div>
+						<div>
+							<h4 class="text-white text-left">"Implementation was quick and straightforward"</h4>
+							<p class="text-white text-left">Senior Manager,<br/>Security and Risk Management
+							<br><a class="text-left" href="https://www.gartner.com/reviews/review/view/743243">Read full review</a>
+							</p>
+						</div>
+					</div>
+					<div class="bg-dark col-lg-3 col-md-6">
+						<div class="pt-3 pb-3">
+							<img src="img/partners/gartner_badge.png" alt="Gartner customers choice" style="width: 200px;"></img>
+						</div>
+						<div>
+							<h4 class="text-white text-left">"This solution is very flexible, stable"</h4>
+							<p class="text-white text-left">Head of Information Security & IT Risk Management,<br/>Security and Risk Management
+							<br><a class="text-left" href="https://www.gartner.com/reviews/review/view/735440">Read full review</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 px-0">
+						<img src="img/f6.jpg" class="img-fluid h-100 w-100"></img>
+					</div>
+					<div class="bg-dark col-lg-3 col-md-6">
+						<div class="pt-3 pb-3">
+							<img src="img/partners/gartner_badge.png" alt="Gartner customers choice" style="width: 200px;"></img>
+						</div>
+						<div>
+							<h4 class="text-white text-left">"Full Suit Of Solution And With Minimal Operational"</h4>
+							<p class="text-white text-left">Head of Technical Support,<br/>Infrastructure and Operations
+							<br><a class="text-left" href="https://www.gartner.com/reviews/review/view/740276">Read full review</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 px-0">
+						<img src="img/f7.jpg" class="img-fluid h-100 w-100"></img>
+					</div>
+				</div>
+				<br><br>
+			</div>
+		</div>
+		</section>
+		<!-- end portfolio Area-->
+		
+		<!-- IN THE NEWS -->
+		<section class="recent-work-area pt-20 pb-20" id="InTheNews"> 
+			<div class="container">
+				<div class="text-center">
+					<h1 class="mb-10">In the News</h1>
+				</div>
+						
+				<div class="row">
+					
+					<div class="sigle-service col-lg-3 col-md-6 text-center">
+							<div><img src="img/News2.jpg" class="img-fluid" style="height: 100%; width: 100%;"></div>
+							<div class="text-left pt-15">
+								<div class="pb-2" style="height: 52px;">
+									<a class="text-title text-center" href="https://www.enterpriseitnews.com.my/silverlake-builds-intel-based-hard-security/">Silverlake builds<br/>Intel-based, ‘Hard’ Security</a>
+								</div>						
+							<p class="m-0">Banking and security expert Silverlake MasterSAM have announced the soft launch of the Silverlake Appliance (SIA) X-300 PAM. </p>
+							<a class="font-weight-bold" href="https://www.enterpriseitnews.com.my/silverlake-builds-intel-based-hard-security/"> &#91;Read More&#93; </a>
+							</div>
+							
+					</div>
+					<div class="sigle-service col-lg-3 col-md-6 text-center">
+							<div><img src="img/News3.jpg" class="img-fluid" style="height: 100%; width: 100%;"></div>
+							<div class="text-left pt-15">
+								<div class="pb-2" style="height: 52px;">
+									<a class="text-title text-center" href="https://futurecio.tech/what-we-get-wrong-all-the-time-with-security/">What we get wrong<br/><i>all the time</i> with security</a>
+								</div>
+								<p class="m-0">FutureCIO spoke to Phuah Yee Keat, Product Engineer at MasterSAM to shed some light on current practices in the security solutions space, including common mistakes.</p>
+								<a class="font-weight-bold" href="https://futurecio.tech/what-we-get-wrong-all-the-time-with-security/"> &#91;Read More&#93; </a>
+							</div>							
+					</div>
+					<div class="sigle-service col-lg-3 col-md-6 text-center">
+							<div><img src="img/News4.jpg" class="img-fluid" style="height: 100%; width: 100%;"></div>
+							<div class="text-left pt-15">
+								<div class="pb-2" style="height: 52px;">
+									<a class="text-title text-center" href="https://www.enterpriseitnews.com.my/your-business-ecosystem-an-ill-fitting-jigsaw-puzzle/">Closing the Door on Cyberthreats</a>
+								</div>
+								<p class="m-0">MasterSAM’s MD, recently talked with Enterprise IT News about Privileged Access Management (PAM), and the challenges it faces.</p>
+								<a class="font-weight-bold" href="https://www.enterpriseitnews.com.my/your-business-ecosystem-an-ill-fitting-jigsaw-puzzle/"> &#91;Read More&#93; </a>
+							</div>							
+					</div>
+					<div class="sigle-service col-lg-3 col-md-6 text-center">
+							<div><img src="img/News1.jpg" class="img-fluid" style="height: 100%; width: 100%;"></div>
+							<div class="text-left pt-15">
+								<div class="pb-2" style="height: 52px;">
+									<a class="text-title text-center" href="https://www.insight.tech/content/closing-the-door-on-cyberthreats">Closing the Door on Cyberthreats</a>
+								</div>
+								<p class="m-0">The IoT is growing by the minute, but security has lagged. Traditional methods don’t protect this expanding threat landscape. New technologies offer stronger safeguards and simplify management for IT.</p>
+								<a class="font-weight-bold" href="https://www.insight.tech/content/closing-the-door-on-cyberthreats"> &#91;Read More&#93; </a>
+							</div>
+					</div>
+					
+				</div>
+			</div> <!-- <div class="container"> -->
+		</section>
+		<!-- end IN THE NEWS Area-->			
+
+		<!-- start footer Area -->		
+		<footer class="footer-area">
+		  <div class="container pt-2">
+			<div class="row">
+			  <div class="col-md-7">
+					<p class="copyright copyright-text-left">
+						<a href="career.html" style="color: #a2c0be;">Careers</a>
+						&bull; 
+						<a href="contact.html" style="color: #a2c0be;">Contact Us</a>
+						&bull; 
+						<a href="sitemap.html" style="color: #a2c0be;">Sitemap</a>
+						&bull; 
+						<a href="privacy.html" style="color: #a2c0be;">Privacy</a>
+						&bull; 
+						<a href="term.html" style="color: #a2c0be;"><span style="white-space: nowrap;">Terms of Use</span></a>
+					</p>
+				</div>
+				<div class="col-md-5 text-copyright">
+					<p class="copyright copyright-text-right">
+						&copy;<script>document.write(new Date().getFullYear());</script> <a href="index.html" target="_blank" style="color: #a2c0be;">Silverlake MasterSAM</a>
+					</p>        
+				</div>
+			</div>
+		  </div>
+		</footer>
+		<!-- End footer Area -->
+		
+		
+<!-- Start productTABS *script* -->		
+<script>
+	function openCity(cityName) {
+	  var i;
+	  var x = document.getElementsByClassName("city");
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	  }
+	  document.getElementById(cityName).style.display = "block";  
+	}
+</script>
+<!-- End productTABS *script* -->		
+
+		
+
+		<script src="js/vendor/jquery-2.2.4.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>			
+		<script src="js/easing.min.js"></script>			
+		<script src="js/hoverIntent.js"></script>
+		<script src="js/superfish.min.js"></script>	
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>	
+		<script src="js/owl.carousel.min.js"></script>			
+		<script src="js/jquery.sticky.js"></script>
+		<script src="js/jquery.nice-select.min.js"></script>			
+		<script src="js/parallax.min.js"></script>	
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>			
+		<script src="js/mail-script.js"></script>	
+		<script src="js/main.js"></script>	
+	</body>
+</html>
+
+
+
